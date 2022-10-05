@@ -1,0 +1,58 @@
+@import '../../styles/variables.scss';
+
+.about__section {
+  padding: 60px 0;
+  background-image: url('../images/2.jpg');
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: .6;
+  }
+  .about__content {
+    position: relative;
+    z-index: 10;
+
+    .section__title {
+      font-size: 120px;
+      color: $color__gold;
+      color: $color__white;
+    }
+    .about__data {
+      column-gap: 20px;
+    }
+    .left__data,
+    .rigth__data {
+      padding: 20px;
+      border-radius: 6px;
+      backdrop-filter: brightness(.5) blur(4px);
+      flex: 1;
+      .about__title {
+        font-size: $ft__32;
+        margin-bottom: 20px;
+        color: $color__gold;
+        font-weight: $ft__w__b;
+      }
+      p {
+        font-size: $ft__18;
+        color: $color__gray;
+        font-weight: $ft__w__m;
+      }
+    }
+    .main__button {
+      margin: 30px auto 0;
+      -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(10px);
+      border-width: 2px;
+    }
+  }
+}

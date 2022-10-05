@@ -1,0 +1,12 @@
+.contact__form {
+  
+  .form__inputs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+  .btns {
+    gap: 20px;
+    margin-top: 30px;
+  }
+}

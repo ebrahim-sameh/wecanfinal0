@@ -1,0 +1,48 @@
+@import '../../styles/variables.scss';
+
+.why__us__section {
+  margin: $section__margin auto;
+  .why__content {
+    column-gap: 45px;
+    &>div {
+      flex: 1;
+      &.left__why {
+        width: 100%;
+        border-radius: 6px;
+        overflow: hidden;
+        img {
+          width: 100%;
+          transition: $transition;
+          &:hover {
+            transform: scale(1.0222);
+          }
+        }
+      }
+      &.rigth__why {
+        h4 {
+          font-size: $ft__38;
+          color: $color__gray;
+          font-weight: $ft__w__b;
+          margin-bottom: 24px;
+          letter-spacing: -.03em;
+          span {
+            font-size: $ft__48;
+            font-weight: 200;
+            color: $color__gold;
+            display: inline-block;
+            &::first-letter {
+              color: $color__white;
+            }
+          }
+        }
+        p {
+          font-size: $ft__18;
+          // font-weight: $ft__w__m;
+          line-height: 32px;
+          color: $color__white__gold;
+          margin-bottom: 18px;
+        }
+      }
+    }
+  }
+}

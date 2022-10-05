@@ -1,0 +1,46 @@
+@import '../../styles/variables.scss';
+
+.nav__container {
+  height: 80px;
+  // position: absolute;
+  // top: 0;
+  // left: 50%;
+  // transform: translateX(-50%);
+  // z-index: 10;
+  .logo {
+    width: 200px;
+    img {
+      width: 100%;
+    }
+  }
+  .nav__links {
+    column-gap: 34px;
+    a {
+      position: relative;
+      transition: $transition;
+      font-size: $ft__16;
+      color: $color__gray;
+      font-weight: $ft__w__m;
+      &.active::after,
+      &::after {
+        content: '';
+        position: absolute;
+        border: 8px solid transparent;
+        border-left-color: $color__gold;
+        top: 50%;
+        left: -10px;
+        transform: translateY(-50%);
+        opacity: 0;
+        transition: $transition;
+      }
+
+      &.active,
+      &:hover {
+        color: $color__gold;
+        &::after {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

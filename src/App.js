@@ -1,24 +1,66 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Header } from "./components";
+
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./styles/app.scss";
+import "bootstrap/dist/js/bootstrap";
+import "bootstrap/dist/js/bootstrap.bundle";
+import "bootstrap/js/dist/dropdown";
+import "bootstrap/js/dist/button";
+import { Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import ContactPage from "./pages/ContactPage";
+import SignleCategory from "./pages/SingleCategry";
 
 function App() {
+  const categories = [
+    {
+      id: 1,
+      title: "Store design",
+      desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, recusandae!",
+    },
+    {
+      id: 2,
+      title: "Interior design",
+      desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, recusandae!",
+    },
+    {
+      id: 3,
+      title: "Kitchens",
+      desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, recusandae!",
+    },
+    {
+      id: 4,
+      title: "Accessories",
+      desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, recusandae!",
+    },
+  ];
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header />
+      <Routes>
+        <Route path="" element={<Home />} />
+        <Route path="/we-can" element={<Home />} />
+        <Route path="/contact-us" element={<ContactPage />} />
+        <Route
+          path="/optical-store-design"
+          element={<SignleCategory data={categories[0]} />}
+        />
+        <Route
+          path="/interior-design"
+          element={<SignleCategory data={categories[1]} />}
+        />
+        <Route
+          path="/kitchens"
+          element={<SignleCategory data={categories[2]} />}
+        />
+        <Route
+          path="/accessories"
+          element={<SignleCategory data={categories[3]} />}
+        />
+      </Routes>
+    </>
   );
 }
 
