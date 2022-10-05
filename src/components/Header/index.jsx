@@ -10,7 +10,7 @@ const Header = () => {
 
   let home = false;
 
-  if(location.pathname === '/home' || location.pathname === '/') {
+  if(location.pathname === '/we-can' || location.pathname === '/') {
     home = true
   }
 
