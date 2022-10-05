@@ -32,7 +32,7 @@ const Gallary = () => {
   ];
 
   return (
-    <section className='gallary__section'>
+    <section className='gallary__section' id='gallary'>
       <h2 className='section__title' data-aos="zoom-in">Gallary</h2>
       <div className='images__container'>
         {images.map(img => (

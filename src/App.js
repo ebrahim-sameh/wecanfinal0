@@ -41,7 +41,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="" element={<Home />} />
-        <Route path="/we-can" element={<Home />} />
+        <Route path="/we-can" index element={<Home />} />
         <Route path="/contact-us" element={<ContactPage />} />
         <Route
           path="/optical-store-design"

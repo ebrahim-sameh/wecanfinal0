@@ -36,10 +36,10 @@ const Header = () => {
           {home && (
             <>
               <li>
-                <a href="#about-us">About Us</a>
+                <a href="#gallary">Gallary</a>
               </li>
               <li>
-                <a href="#gallary">Gallary</a>
+                <a href="#about-us">About Us</a>
               </li>
               <li>
                 <a href="#our-projects">Our Projects</a>

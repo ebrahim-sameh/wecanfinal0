@@ -51,7 +51,7 @@ const OurProjects = () => {
   ];
 
   return (
-    <section className='our__projects__section'>
+    <section className='our__projects__section' id='our-projects'>
       <h2 className='section__title' data-aos="zoom-in">Our Projects</h2>
       <div className='projects__container'>
       <Swiper
