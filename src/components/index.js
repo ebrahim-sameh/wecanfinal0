@@ -8,3 +8,5 @@ export { default as MainInput } from './MainInput';
 export { default as Categories } from './Categories';
 export { default as WhyUs } from './WhyUs';
 export { default as Feedback } from './Feedback';
+export { default as Pagination } from './Pagination';
+export { default as FullScreenSlider } from './FullScreenSlider';

@@ -40,7 +40,7 @@ const Feedback = () => {
       <div className="over__lay"></div>
       <div className="container">
         <div className="testmony__content">
-          <h2 className='section__title'>Happy Customers</h2>
+          <h2 className='section__title' data-aos='zoom-in'>Testimonials</h2>
           <div className="testimony_slider"
             data-aos='fade-up' 
             data-aos-duration="1000" 

@@ -1,20 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import Logo from "../images/we-can-logo2-gold-and-white.png";
-// import Logo from '../images/golden-and-white1.png'
+import { MdClose, MdOutlineMenu } from 'react-icons/md'
 
 import "./Header.scss";
 const Header = () => {
 
+  const [openMenu, setOpenMenu] = useState(false);
   const location = useLocation();
 
   let home = false;
 
-  if(location.pathname === '/we-can' || location.pathname === '/') {
+  if(location.pathname === '/we-can' || location.pathname === '/we-can/' || location.pathname === '/') {
     home = true
   }
-
-  console.log(home)
 
   return (
     <header>
@@ -24,9 +23,10 @@ const Header = () => {
             <img src={Logo} alt="LOGO" />
           </NavLink>
         </div>
-        <ul className="nav__links d-flex aling-items-center justify-content-end">
+        <ul className={`nav__links d-flex aling-items-center justify-content-end ${openMenu ? 'open__menu' : ''}`}>
           <li>
             <NavLink
+              onClick={() => setOpenMenu(false)}
               to="/we-can"
               className={({ isActive }) => (isActive ? "active" : "")}
             >
@@ -35,26 +35,29 @@ const Header = () => {
           </li>
           {home && (
             <>
-              <li>
+              <li onClick={() => setOpenMenu(false)}>
                 <a href="#gallary">Gallary</a>
               </li>
-              <li>
+              <li onClick={() => setOpenMenu(false)}>
                 <a href="#about-us">About Us</a>
               </li>
-              <li>
+              <li onClick={() => setOpenMenu(false)}>
                 <a href="#our-projects">Our Projects</a>
               </li>
             </>
           )}
           <li>
             <NavLink
+              onClick={() => setOpenMenu(false)}
               to="/contact-us"
               className={({ isActive }) => (isActive ? "active" : "")}
             >
               Contact Us
             </NavLink>
           </li>
+          <button className="close__btn" onClick={() => setOpenMenu(false)}><MdClose /></button>
         </ul>
+        <button className="open__btn" onClick={() => setOpenMenu(true)}><MdOutlineMenu /></button>
       </nav>
     </header>
   );

@@ -43,4 +43,55 @@
       }
     }
   }
+  .close__btn {
+    display: none;
+  }
+  .open__btn {
+    display: none;
+
+  }
+}
+
+@media(max-width: 991px) {
+  .nav__container {
+    .close__btn {
+      display: block;
+      position: absolute;
+      top: 10px;
+      left: 20px;
+      font-size: $ft__32;
+    }
+    .open__btn {
+      display: block;
+      font-size: $ft__32;
+      color: $color__gold;
+    }
+    .nav__links {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      background-color: $bg__color;
+      z-index: 100000;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center !important;
+      row-gap: 30px;
+      transition: $transition;
+      transform: translateX(-100%);
+      &.open__menu {
+        transform: translateX(0);
+      }
+      a {
+        font-size: $ft__24;
+        &.active::after, 
+        &::after {
+          border-width: 12px;
+          left: -20px;
+        }
+      }
+    }
+  }
+    
 }

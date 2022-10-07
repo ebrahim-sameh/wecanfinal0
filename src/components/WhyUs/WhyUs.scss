@@ -2,6 +2,8 @@
 
 .why__us__section {
   margin: $section__margin auto;
+  width: 100%;
+  overflow: hidden;
   .why__content {
     column-gap: 45px;
     &>div {
@@ -43,6 +45,15 @@
           margin-bottom: 18px;
         }
       }
+    }
+  }
+}
+
+@media(max-width: 991px)  {
+  .why__us__section {
+    .why__content {
+      flex-direction: column;
+      row-gap: 30px;
     }
   }
 }

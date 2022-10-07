@@ -14,7 +14,7 @@ const WhyUs = () => {
   return (
     <section className='why__us__section'>
       <div className="container">
-        <h2 className="section__title" data-aos="zoom-in">Why Us</h2>
+        <h2 className="section__title" data-aos="zoom-in">Why Choose Us</h2>
         <div className="why__content d-flex align-items-center">
           <div className="left__why" data-aos="fade-right">
             <img src="https://livedemo00.template-help.com/wt_prod-25033/images/grid-gallery-3-original.jpg" alt="" />

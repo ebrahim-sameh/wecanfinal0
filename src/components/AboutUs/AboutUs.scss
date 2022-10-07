@@ -7,6 +7,8 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  width: 100%;
+  overflow: hidden;
 
   &::after {
     content: '';
@@ -54,5 +56,14 @@
       backdrop-filter: blur(10px);
       border-width: 2px;
     }
+  }
+}
+
+@media(max-width: 991px) {
+  .about__section {
+    .about__content .about__data {
+      flex-direction: column;
+      row-gap: 24px;
+    } 
   }
 }

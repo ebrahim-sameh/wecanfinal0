@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper";
 import { AiOutlineCompress } from 'react-icons/ai'
@@ -8,8 +8,11 @@ import "aos/dist/aos.css";
 import "swiper/css";
 import "swiper/css/navigation";
 import './OurProjects.scss'
+import FullScreenSlider from '../FullScreenSlider';
 
 const OurProjects = () => {
+
+  const [openSlider, setOpenSlider] = useState(false);
 
   useEffect(function () {
     Aos.init({ duration: 1000 });
@@ -51,50 +54,53 @@ const OurProjects = () => {
   ];
 
   return (
-    <section className='our__projects__section' id='our-projects'>
-      <h2 className='section__title' data-aos="zoom-in">Our Projects</h2>
-      <div className='projects__container'>
-      <Swiper
-          slidesPerView={1}
-          spaceBetween={0}
-          // loop={true}
-          autoplay={{
-            delay: 4000,
-            disableOnInteraction: false,
-          }}
-          pagination={{
-            clickable: true,
-          }}
-          navigation={true}
-          breakpoints={{
-            390: {
-              slidesPerView: 2,
-            },
-            768: {
-              slidesPerView: 3,
-            },
-            1200: {
-              slidesPerView: 4,
-            }
-          }}
-          modules={[Autoplay, Navigation]}
-        className="projects__slider"
-      >
-        {projects.map((project, i) => (
-          <SwiperSlide key={project.id}>
-            <div 
-              className='project__container' 
-              data-aos='fade-up' 
-              data-aos-delay={`${i}00`}
-            >
-              <img src={project.src} alt=""/>
-              <button><AiOutlineCompress className='full__secreen__button' /></button>
-            </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
-      </div>
-    </section>
+    <>
+      <section className='our__projects__section' id='our-projects'>
+        <h2 className='section__title' data-aos="zoom-in">Our Projects</h2>
+        <div className='projects__container'>
+        <Swiper
+            slidesPerView={1}
+            spaceBetween={0}
+            loop={true}
+            // autoplay={{
+            //   delay: 4000,
+            //   disableOnInteraction: false,
+            // }}
+            pagination={{
+              clickable: true,
+            }}
+            navigation={true}
+            breakpoints={{
+              390: {
+                slidesPerView: 2,
+              },
+              768: {
+                slidesPerView: 3,
+              },
+              1200: {
+                slidesPerView: 4,
+              }
+            }}
+            modules={[Autoplay, Navigation]}
+          className="projects__slider"
+        >
+          {projects.map((project, i) => (
+            <SwiperSlide key={project.id}>
+              <div 
+                className='project__container' 
+                data-aos='fade-up' 
+                data-aos-delay={`${i}00`}
+              >
+                <img src={project.src} alt=""/>
+                <button onClick={() => setOpenSlider(true)}><AiOutlineCompress className='full__secreen__button' /></button>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+        </div>
+      </section>
+      {openSlider && <FullScreenSlider onClose={setOpenSlider} />}
+    </>
   )
 }
 

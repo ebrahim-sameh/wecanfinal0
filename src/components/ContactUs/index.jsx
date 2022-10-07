@@ -41,22 +41,22 @@ const ContactUs = () => {
       checkTheValue: value => value?.length > 0,
       error: "This filed can't be empty!"
     },
-    {
-      id: 'password',
-      type: 'password',
-      placeholder: 'Password',
-      icon: 'password',
-      checkTheValue: value => value?.length > 6,
-      error: "Password Must be more than 6 ch!"
-    },
-    {
-      id: 'confirmPassword',
-      type: 'password',
-      placeholder: 'Confirm Password',
-      icon: 'password',
-      checkTheValue: (value, password) => value === password,
-      error: "The confirm password must matched with password!"
-    },
+    // {
+    //   id: 'password',
+    //   type: 'password',
+    //   placeholder: 'Password',
+    //   icon: 'password',
+    //   checkTheValue: value => value?.length > 6,
+    //   error: "Password Must be more than 6 ch!"
+    // },
+    // {
+    //   id: 'confirmPassword',
+    //   type: 'password',
+    //   placeholder: 'Confirm Password',
+    //   icon: 'password',
+    //   checkTheValue: (value, password) => value === password,
+    //   error: "The confirm password must matched with password!"
+    // },
   ];
 
   return (
@@ -81,7 +81,6 @@ const ContactUs = () => {
         </div>
         <div className="btns d-flex align-items-center justify-content-center">
           <Button type='submit'>Submit</Button>
-          <Button type='button'>Cancel</Button>
         </div>
       </form>
     </div>

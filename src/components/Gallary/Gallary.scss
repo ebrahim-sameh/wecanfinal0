@@ -78,3 +78,29 @@
     margin: 40px auto 0;
   }
 }
+
+@media(max-width: 991px) {
+  .gallary__section {
+    .images__container {
+      .single__image__container {
+        max-height: 600px;
+      }
+    } 
+  }
+}
+@media(max-width: 767px) {
+  .gallary__section {
+    .section__title {
+      margin-bottom: 40px;
+    }
+    .images__container {
+      grid-template-columns: 1fr;
+      gap: 20px;
+      .single__image__container:nth-child(2), 
+      .single__image__container:nth-child(4) {
+        margin-top: 0;
+      }
+    } 
+
+  }
+}

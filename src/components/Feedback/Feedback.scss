@@ -10,7 +10,6 @@
   h2.section__title {
     font-size: 100px;
     color: $color__white__gold;
-    // color: #FFF;
     margin-bottom: 60px;
   }
   .over__lay {
@@ -71,19 +70,25 @@
     }
   }
 }
-// @media(max-width: 575px) {
-//   .tesimony_swiper img {
-//     width: 100px;
-//     height: 100px;
-//   }
-//   .tesimony_swiper h3 {
-//     font-size: 24px;
-//     margin-bottom: 4px;
-//   }
-//   .tesimony_swiper p {
-//     font-size: 16px;
-//   }
-// }
+@media(max-width: 575px) {
+  .testimony__section {
+    padding: 40px 0 ;
+    .testmony__content .customer {
+      img {
+        width: 100px;
+        height: 100px;
+      }
+      h3 {
+        font-size: 24px;
+        margin-bottom: 4px;
+      }
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+  
+}
 // @media(max-width: 340px) {
 //   .tesimony_swiper {
 //     padding: 10px;

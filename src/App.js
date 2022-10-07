@@ -1,5 +1,5 @@
 import React from "react";
-import { Header } from "./components";
+import { Header, Pagination } from "./components";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles/app.scss";
@@ -60,6 +60,7 @@ function App() {
           element={<SignleCategory data={categories[3]} />}
         />
       </Routes>
+      <Pagination />
     </>
   );
 }
