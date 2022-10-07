@@ -24,7 +24,7 @@ const Pagination = () => {
           </button>
         </li>
         <li>
-          <a href="#home">
+          <a href="#">
             <span className='p_tooltip'>Home</span>
           </a>
         </li>

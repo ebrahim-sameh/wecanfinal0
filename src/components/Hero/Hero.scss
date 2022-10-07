@@ -2,7 +2,6 @@
 
 .hero__section {
   height: calc(100vh - 80px);
-  // height: 100vh;
   position: relative;
   overflow: hidden;
   .bgk__imgae {
@@ -45,14 +44,17 @@
         align-items: center;
         text-align: center;
         line-height: 52px;
+        font-weight: $ft__w__m;
         span {
           &:first-of-type {
+            font-family: myFirstFont;
             font-size: $ft__90;
-            font-weight: $ft__w__b;
+            // font-weight: $ft__w__b;
           }
           &:last-of-type {
+            font-family: myFirstFont1;
             letter-spacing: -.03em;
-            font-weight: $ft__w__m;
+            font-weight: $ft__w__b;
             color: $color__gold;
             font-size: $ft__38;
           }

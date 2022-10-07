@@ -30,14 +30,14 @@
       color: $color__white;
     }
     .about__data {
-      column-gap: 20px;
+      gap: 20px;
+      flex-wrap: wrap;
     }
-    .left__data,
-    .rigth__data {
+    .about__box {
       padding: 20px;
       border-radius: 6px;
       backdrop-filter: brightness(.5) blur(4px);
-      flex: 1;
+      flex-basis: calc(50% - 10px);
       .about__title {
         font-size: $ft__32;
         margin-bottom: 20px;

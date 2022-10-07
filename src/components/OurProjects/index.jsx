@@ -56,16 +56,18 @@ const OurProjects = () => {
   return (
     <>
       <section className='our__projects__section' id='our-projects'>
-        <h2 className='section__title' data-aos="zoom-in">Our Projects</h2>
+        <div className="container">
+          <h2 className='section__title' data-aos="zoom-in">Our Projects</h2>
+        </div>
         <div className='projects__container'>
         <Swiper
             slidesPerView={1}
             spaceBetween={0}
             loop={true}
-            // autoplay={{
-            //   delay: 4000,
-            //   disableOnInteraction: false,
-            // }}
+            autoplay={{
+              delay: 4000,
+              disableOnInteraction: false,
+            }}
             pagination={{
               clickable: true,
             }}

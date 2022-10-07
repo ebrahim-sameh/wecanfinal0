@@ -1,5 +1,5 @@
 import React from "react";
-import { Header, Pagination } from "./components";
+import { Footer, Header } from "./components";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles/app.scss";
@@ -11,6 +11,7 @@ import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import ContactPage from "./pages/ContactPage";
 import SignleCategory from "./pages/SingleCategry";
+import AboutPage from "./pages/AboutPage";
 
 function App() {
   const categories = [
@@ -59,8 +60,12 @@ function App() {
           path="/accessories"
           element={<SignleCategory data={categories[3]} />}
         />
+        <Route
+          path="/about-us"
+          element={<AboutPage />}
+        />
       </Routes>
-      <Pagination />
+      <Footer />
     </>
   );
 }

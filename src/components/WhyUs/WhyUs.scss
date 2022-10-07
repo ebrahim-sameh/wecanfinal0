@@ -24,14 +24,15 @@
         h4 {
           font-size: $ft__38;
           color: $color__gray;
-          font-weight: $ft__w__b;
           margin-bottom: 24px;
           letter-spacing: -.03em;
+          font-family: myFirstFont1;
           span {
             font-size: $ft__48;
             font-weight: 200;
             color: $color__gold;
             display: inline-block;
+            font-weight: $ft__w__b;
             &::first-letter {
               color: $color__white;
             }

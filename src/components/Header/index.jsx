@@ -33,14 +33,23 @@ const Header = () => {
               Home
             </NavLink>
           </li>
+          <li>
+            <NavLink
+              onClick={() => setOpenMenu(false)}
+              to="/about-us"
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
+              About Us
+            </NavLink>
+          </li>
           {home && (
             <>
               <li onClick={() => setOpenMenu(false)}>
                 <a href="#gallary">Gallary</a>
               </li>
-              <li onClick={() => setOpenMenu(false)}>
+              {/* <li onClick={() => setOpenMenu(false)}>
                 <a href="#about-us">About Us</a>
-              </li>
+              </li> */}
               <li onClick={() => setOpenMenu(false)}>
                 <a href="#our-projects">Our Projects</a>
               </li>
