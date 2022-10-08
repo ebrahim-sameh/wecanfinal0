@@ -29,7 +29,7 @@ const Footer = () => {
           <a href="#home" target='_blank'><FaDribbble /></a>
         </div>
         <div className="copy__rigth d-flex flex-column align-items-center justify-content-center">
-          <p>© 2021 Voicer Recording Studio. All Rights Reserved.</p>
+          <p>© 2022 We Can Wooden Products. All Rights Reserved.</p>
           <p>Privacy Policy | Terms of Service</p>
         </div>
       </div>
