@@ -21,7 +21,7 @@ const WhyUs = () => {
           </div>
           <div className="rigth__why" data-aos="fade-left">
             <h4>We Are The <span>BEST</span></h4>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas, a labore. Commodi vero nobis et praesentium molestiae reiciendis asperiores, eaque, voluptatum natus possimus aspernatur, obcaecati provident veniam modi? Iure, odio?</p>
+            <p>choosing the right company is key to getting you what you need. There are plenty of options available in the wood industry in Egypt, so it is crucial to purchase a service from a company that understands your need. We focus on the here and now, basing our decisions on what is most practical for our customers. We strive to create a positive impact in the digital landscape, by spreading our beliefs through the products we build.</p>
             <Button>Portfolio</Button>
           </div>
         </div>

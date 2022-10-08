@@ -12,8 +12,14 @@
         width: 100%;
         border-radius: 6px;
         overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        height: 400px;
         img {
           width: 100%;
+          height: 100%;
+          object-fit: cover;
           transition: $transition;
           &:hover {
             transform: scale(1.0222);
@@ -21,12 +27,17 @@
         }
       }
       &.rigth__why {
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: space-between;
+        // row-gap: 10px;
         h4 {
           font-size: $ft__38;
           color: $color__gray;
           margin-bottom: 24px;
           letter-spacing: -.03em;
           font-family: myFirstFont1;
+          line-height: 36px;
           span {
             font-size: $ft__48;
             font-weight: 200;
@@ -39,11 +50,13 @@
           }
         }
         p {
-          font-size: $ft__18;
-          // font-weight: $ft__w__m;
-          line-height: 32px;
-          color: $color__white__gold;
-          margin-bottom: 18px;
+          font-size: 18px;
+          line-height: 33px;
+          color: #EFD0A7;
+          margin-bottom: 39px;
+        }
+        button.main__button {
+          width: fit-content;
         }
       }
     }

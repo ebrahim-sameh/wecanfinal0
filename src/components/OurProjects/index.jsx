@@ -60,10 +60,10 @@ const OurProjects = () => {
           <h2 className='section__title' data-aos="zoom-in">Our Projects</h2>
         </div>
         <div className='projects__container'>
-        <Swiper
+          <Swiper
             slidesPerView={1}
             spaceBetween={0}
-            loop={true}
+            // loop={true}
             autoplay={{
               delay: 4000,
               disableOnInteraction: false,
@@ -84,21 +84,21 @@ const OurProjects = () => {
               }
             }}
             modules={[Autoplay, Navigation]}
-          className="projects__slider"
-        >
-          {projects.map((project, i) => (
-            <SwiperSlide key={project.id}>
-              <div 
-                className='project__container' 
-                data-aos='fade-up' 
-                data-aos-delay={`${i}00`}
-              >
-                <img src={project.src} alt=""/>
-                <button onClick={() => setOpenSlider(true)}><AiOutlineCompress className='full__secreen__button' /></button>
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
+            className="projects__slider"
+          >
+            {projects.map((project, i) => (
+              <SwiperSlide key={project.id}>
+                <div
+                  className='project__container'
+                  data-aos='fade-up'
+                  data-aos-delay={`${i}00`}
+                >
+                  <img src={project.src} alt="" />
+                  <button onClick={() => setOpenSlider(true)}><AiOutlineCompress className='full__secreen__button' /></button>
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
       </section>
       {openSlider && <FullScreenSlider onClose={setOpenSlider} />}
