@@ -20,7 +20,7 @@ const SignleCategory = ({ data }) => {
     <section className='category__section'>
       <div className="container">
         <h2 className='section__title'>{data.title}</h2>
-        <p className='section__subtitle'>{data.desc}</p>
+        <p className='section__subtitle'>{data.desc} hhhh</p>
           <div className="single__cayegor__content">
             {data.projects.map((project, pi) => (
               <div className='single__project' key={project.id}>

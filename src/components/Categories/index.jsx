@@ -1,6 +1,9 @@
 import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import Image from '../images/Kitchens/k.jpg'
+import Image2 from '../images/optics/2.png'
+import Image3 from '../images/Interior/3rd library.jpeg'
+import Image4 from '../images/Accessories/1.jpg'
 import Aos from "aos";
 
 import "aos/dist/aos.css";
@@ -14,14 +17,14 @@ const Categories = () => {
       title: 'Optical store design',
       href: '/optical-store-design',
       desc:'You can easily display your products and services in a way that is both elegant and practical, with our trendy and creative optic store design.',
-      img: Image
+      img: Image2
     },
     {
       id: 2,
       title: 'Interior design',
       href: '/interior-design',
       desc: "When it comes to interior design, there's a lot to choose from. We recognise that every detail is important, so we offer a wide choice of furniture and decorations.",
-      img: Image
+      img: Image3
     },
     {
       id: 3,
@@ -35,7 +38,7 @@ const Categories = () => {
       title: 'Accessories',
       href: '/accessories',
       desc:'Our range of wooden accessories is perfect for adding a touch of nature to any room.',
-      img: Image
+      img: Image4
     },
   ];
 

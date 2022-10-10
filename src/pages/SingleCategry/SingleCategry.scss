@@ -3,7 +3,9 @@
 .category__section {
   margin: 40px auto;
   .section__subtitle {
-    display: none;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 60px;
   }
   .single__cayegor__content {
     display: grid;

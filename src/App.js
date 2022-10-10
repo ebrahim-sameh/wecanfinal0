@@ -23,6 +23,27 @@ import k4p2 from '../src/components/images/Kitchens/k4/2.jpg'
 import k5p1 from '../src/components/images/Kitchens/k5/1.jpg'
 import k5p2 from '../src/components/images/Kitchens/k5/2.jpg'
 
+import opt1 from '../src/components/images/optics/1.png' 
+import opt2 from '../src/components/images/optics/2.png' 
+import opt3 from '../src/components/images/optics/3.png' 
+import opt4 from '../src/components/images/optics/4.png' 
+
+import i1p1 from '../src/components/images/Interior/l1/Living Room.jpg'
+import i1p2 from '../src/components/images/Interior/l1/Living Room(1).jpg'
+
+import i2p1 from '../src/components/images/Interior/l2/1st library.jpeg'
+
+import i3p1 from '../src/components/images/Interior/l3/3rd library.jpeg'
+
+import i4p1 from '../src/components/images/Interior/l4/4th library.jpg'
+import i4p2 from '../src/components/images/Interior/l4/5 th library.jpg'
+import i4p3 from '../src/components/images/Interior/l4/6th library.jpg'
+
+import a1p1 from '../src/components/images/Accessories/1.jpg'
+import a1p2 from '../src/components/images/Accessories/2.jpg'
+import a1p3 from '../src/components/images/Accessories/3.jpg'
+import a1p4 from '../src/components/images/Accessories/4.jpg'
+
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles/app.scss";
 import "bootstrap/dist/js/bootstrap";
@@ -45,86 +66,22 @@ function App() {
           images: [
             {
               id: 1,
-              src: k1p1
+              src: opt1
             },
             {
               id: 2,
-              src: k1p2
+              src: opt2
             },
             {
               id: 3,
-              src: k1p3
-            },
-          ]
-        },
-        {
-          id: 2,
-          title: 'project Name',
-          desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, recusandae!',
-          images: [
-            {
-              id: 1,
-              src: k2p1
-            },
-            {
-              id: 2,
-              src: k2p2
+              src: opt3
             },
             {
               id: 3,
-              src: k2p3
+              src: opt4
             },
           ]
-        },
-        {
-          id: 3,
-          title: 'project Name',
-          desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, recusandae!',
-          images: [
-            {
-              id: 1,
-              src: k3p1
-            },
-            {
-              id: 2,
-              src: k3p2
-            },
-            {
-              id: 3,
-              src: k3p3
-            },
-          ]
-        },
-        {
-          id: 4,
-          title: 'project Name',
-          desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, recusandae!',
-          images: [
-            {
-              id: 1,
-              src: k4p1
-            },
-            {
-              id: 2,
-              src: k4p2
-            },
-          ]
-        },
-        {
-          id: 5,
-          title: 'project Name',
-          desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, recusandae!',
-          images: [
-            {
-              id: 1,
-              src: k5p1
-            },
-            {
-              id: 1,
-              src: k5p2
-            }
-          ]
-        },
+        }
       ]
     },
     {
@@ -139,15 +96,15 @@ function App() {
           images: [
             {
               id: 1,
-              src: k1p1
+              src: i4p1
             },
             {
               id: 2,
-              src: k1p2
+              src: i4p2
             },
             {
               id: 3,
-              src: k1p3
+              src: i4p3
             },
           ]
         },
@@ -158,16 +115,8 @@ function App() {
           images: [
             {
               id: 1,
-              src: k2p1
-            },
-            {
-              id: 2,
-              src: k2p2
-            },
-            {
-              id: 3,
-              src: k2p3
-            },
+              src: i3p1
+            }
           ]
         },
         {
@@ -177,16 +126,8 @@ function App() {
           images: [
             {
               id: 1,
-              src: k3p1
-            },
-            {
-              id: 2,
-              src: k3p2
-            },
-            {
-              id: 3,
-              src: k3p3
-            },
+              src: i2p1
+            }
           ]
         },
         {
@@ -196,29 +137,14 @@ function App() {
           images: [
             {
               id: 1,
-              src: k4p1
+              src: i1p1
             },
             {
               id: 2,
-              src: k4p2
+              src: i1p2
             },
           ]
-        },
-        {
-          id: 5,
-          title: 'project Name',
-          desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, recusandae!',
-          images: [
-            {
-              id: 1,
-              src: k5p1
-            },
-            {
-              id: 1,
-              src: k5p2
-            }
-          ]
-        },
+        }
       ]
     },
     {
@@ -327,84 +253,20 @@ function App() {
           images: [
             {
               id: 1,
-              src: k1p1
+              src: a1p1
             },
             {
               id: 2,
-              src: k1p2
+              src: a1p2
             },
             {
               id: 3,
-              src: k1p3
-            },
-          ]
-        },
-        {
-          id: 2,
-          title: 'project Name',
-          desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, recusandae!',
-          images: [
-            {
-              id: 1,
-              src: k2p1
-            },
-            {
-              id: 2,
-              src: k2p2
+              src: a1p3
             },
             {
               id: 3,
-              src: k2p3
+              src: a1p4
             },
-          ]
-        },
-        {
-          id: 3,
-          title: 'project Name',
-          desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, recusandae!',
-          images: [
-            {
-              id: 1,
-              src: k3p1
-            },
-            {
-              id: 2,
-              src: k3p2
-            },
-            {
-              id: 3,
-              src: k3p3
-            },
-          ]
-        },
-        {
-          id: 4,
-          title: 'project Name',
-          desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, recusandae!',
-          images: [
-            {
-              id: 1,
-              src: k4p1
-            },
-            {
-              id: 2,
-              src: k4p2
-            },
-          ]
-        },
-        {
-          id: 5,
-          title: 'project Name',
-          desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, recusandae!',
-          images: [
-            {
-              id: 1,
-              src: k5p1
-            },
-            {
-              id: 1,
-              src: k5p2
-            }
           ]
         },
       ]
