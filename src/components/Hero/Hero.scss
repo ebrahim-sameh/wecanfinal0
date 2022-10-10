@@ -4,29 +4,54 @@
   height: calc(100vh - 80px);
   position: relative;
   overflow: hidden;
-  .bgk__imgae {
-    position: absolute;
+  // .bgk__imgae {
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0%;
+  //   width: 100%;
+  //   height: 100%;
+  //   // background-image: url('https://media.istockphoto.com/photos/modern-living-room-interior-3d-render-picture-id1293762741?b=1&k=20&m=1293762741&s=170667a&w=0&h=2RI8SmBN4MrEZuTvdwRzaeB887x-dukFcQBpyQ-qwS4=');
+  //   background-attachment: fixed;
+  //   background-repeat: no-repeat;
+  //   background-size: cover;
+  //   transition: $transition;
+    
+  //   &::after {
+  //     content: '';
+  //     position: absolute;
+  //     top: 0;
+  //     left: 0;
+  //     width: 100%;
+  //     height: 100%;
+  //     background-color: #000;
+  //     opacity: 1;
+  //     // backdrop-filter: blur(10px);
+  //   }
+  // }
+  .gb__image {
     top: 0;
-    left: 0%;
+    left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('https://media.istockphoto.com/photos/modern-living-room-interior-3d-render-picture-id1293762741?b=1&k=20&m=1293762741&s=170667a&w=0&h=2RI8SmBN4MrEZuTvdwRzaeB887x-dukFcQBpyQ-qwS4=');
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    transition: $transition;
-    
-    &::after {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
+    z-index: -1;
+    img {
+      // position: fixed;
       width: 100%;
       height: 100%;
-      background-color: #000;
-      opacity: .6;
-      // backdrop-filter: blur(10px);
+      object-fit: cover;
     }
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: .4555555;
+    z-index: -1;
+    // backdrop-filter: blur(10px);
   }
   .hero__content {
     height: calc(100vh - 80px);

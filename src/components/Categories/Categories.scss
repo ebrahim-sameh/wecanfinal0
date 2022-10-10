@@ -2,9 +2,6 @@
 
 .categories__section {
   margin: $section__margin 0;
-  .section__title {
-    margin-bottom: 14px;
-  }
   .categorise__container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));

@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import Image from '../images/shot 4.png'
-import Image2 from '../images/2.jpg'
+import Image from '../images/Kitchens/k.jpg'
 import Aos from "aos";
 
 import "aos/dist/aos.css";
@@ -14,29 +13,29 @@ const Categories = () => {
       id: 1,
       title: 'Optical store design',
       href: '/optical-store-design',
-      desc:'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, recusandae!',
+      desc:'You can easily display your products and services in a way that is both elegant and practical, with our trendy and creative optic store design.',
       img: Image
     },
     {
       id: 2,
       title: 'Interior design',
       href: '/interior-design',
-      desc:'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, recusandae!',
+      desc: "When it comes to interior design, there's a lot to choose from. We recognise that every detail is important, so we offer a wide choice of furniture and decorations.",
       img: Image
     },
     {
       id: 3,
       title: 'Kitchens',
       href: '/kitchens',
-      desc:'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, recusandae!',
+      desc:'We have everything you need to bring your dream kitchen to life. Call us today to help make your vision a reality!',
       img: Image
     },
     {
       id: 4,
       title: 'Accessories',
       href: '/accessories',
-      desc:'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, recusandae!',
-      img: Image2
+      desc:'Our range of wooden accessories is perfect for adding a touch of nature to any room.',
+      img: Image
     },
   ];
 
@@ -48,7 +47,6 @@ const Categories = () => {
   return (
     <section className='categories__section'>
       <h2 className="section__title" data-aos="zoom-in">Categories</h2>
-      <p className='section__subtitle'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
       <div className="categorise__container">
         {categories.map((category, i) => (
           <div key={category.id} className='signle__category' data-aos="fade-up" data-aos-delay={`${i}00`}>

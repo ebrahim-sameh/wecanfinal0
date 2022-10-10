@@ -7,7 +7,7 @@ import "swiper/css";
 import "swiper/css/free-mode";
 import './HeroSliderControls.scss'
 
-const HeroSliderControls = ({ images, setImage, onOpenSlider }) => {
+const HeroSliderControls = ({ images, setImage, onOpenSlider, setCurrIndex }) => {
   return (
     <div className='bgk__control__container'>
       <Swiper
@@ -21,11 +21,14 @@ const HeroSliderControls = ({ images, setImage, onOpenSlider }) => {
         modules={[FreeMode, Autoplay]}
         className="bgk__control"
       >
-        {images.map(img => (
+        {images.map((img, i) => (
           <SwiperSlide key={img.id}>
             <div className='img__container'>
               <img src={img.src} alt="" onClick={() => setImage && setImage(img.src)}/>
-              <button onClick={() => onOpenSlider(true)}><BsFullscreen className='full__secreen__button' /></button>
+              <button onClick={() => {
+                onOpenSlider(true);
+                setCurrIndex(i);
+              }}><BsFullscreen className='full__secreen__button' /></button>
             </div>
           </SwiperSlide>
         ))}

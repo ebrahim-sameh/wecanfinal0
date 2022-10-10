@@ -2,17 +2,32 @@ import React, { useEffect, useState } from 'react'
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper";
 import { AiOutlineCompress } from 'react-icons/ai'
+import P from '../images/projects/3.png'
+import P1 from '../images/projects/1st kitchen.jpeg'
+import P2 from '../images/projects/1st library.jpeg'
+import P3 from '../images/projects/2 nd kitchen.jpg'
+import P4 from '../images/projects/2nd library.jpeg'
+import P5 from '../images/projects/3 rdkitchen.jpg'
+import P6 from '../images/projects/3rd kitchen.jpg'
+import P7 from '../images/projects/4 th kitchen.png'
+import P8 from '../images/projects/4th kitchen.png'
+import P9 from '../images/projects/5 thkitchen.png'
+// import P10 from '../images/projects/Living Room(1).jpg'
+import P11 from '../images/projects/Living Room.jpg'
+import P12 from '../images/projects/Copy of kitchen3_Unnamed Space-10 - Copy.jpeg'
+import P13 from '../images/projects/5th kitchen.png'
+import FullScreenSlider from '../FullScreenSlider';
 import Aos from "aos";
 
 import "aos/dist/aos.css";
 import "swiper/css";
 import "swiper/css/navigation";
 import './OurProjects.scss'
-import FullScreenSlider from '../FullScreenSlider';
 
 const OurProjects = () => {
 
   const [openSlider, setOpenSlider] = useState(false);
+  const [currentIndex, setCurtrentIndex] = useState(0)
 
   useEffect(function () {
     Aos.init({ duration: 1000 });
@@ -20,36 +35,56 @@ const OurProjects = () => {
 
   const projects = [
     {
+      id: 0,
+      src: P
+    },
+    {
       id: 1,
-      src: 'https://livedemo00.template-help.com/wt_prod-25033/images/grid-gallery-1-original.jpg'
+      src: P6
     },
     {
       id: 2,
-      src: 'https://livedemo00.template-help.com/wt_prod-25033/images/grid-gallery-3-original.jpg'
+      src: P2
     },
     {
       id: 3,
-      src: 'https://livedemo00.template-help.com/wt_prod-25033/images/grid-gallery-2-original.jpg'
+      src: P4
     },
     {
       id: 4,
-      src: 'https://livedemo00.template-help.com/wt_prod-25033/images/grid-gallery-4-original.jpg'
+      src: P8
     },
     {
       id: 5,
-      src: 'https://livedemo00.template-help.com/wt_prod-25033/images/grid-gallery-1-original.jpg'
+      src: P3
     },
     {
       id: 6,
-      src: 'https://livedemo00.template-help.com/wt_prod-25033/images/grid-gallery-3-original.jpg'
+      src: P9
     },
     {
       id: 7,
-      src: 'https://livedemo00.template-help.com/wt_prod-25033/images/grid-gallery-2-original.jpg'
+      src: P7
     },
     {
       id: 8,
-      src: 'https://livedemo00.template-help.com/wt_prod-25033/images/grid-gallery-4-original.jpg'
+      src: P8
+    },
+    {
+      id: 9,
+      src: P1
+    },
+    {
+      id: 11,
+      src: P11
+    },
+    {
+      id: 12,
+      src: P12
+    },
+    {
+      id: 13,
+      src: P13
     },
   ];
 
@@ -62,8 +97,7 @@ const OurProjects = () => {
         <div className='projects__container'>
           <Swiper
             slidesPerView={1}
-            spaceBetween={0}
-            // loop={true}
+            spaceBetween={10}
             autoplay={{
               delay: 4000,
               disableOnInteraction: false,
@@ -94,14 +128,17 @@ const OurProjects = () => {
                   data-aos-delay={`${i}00`}
                 >
                   <img src={project.src} alt="" />
-                  <button onClick={() => setOpenSlider(true)}><AiOutlineCompress className='full__secreen__button' /></button>
+                  <button onClick={() => {
+                    setOpenSlider(true)
+                    setCurtrentIndex(i)
+                  }}><AiOutlineCompress className='full__secreen__button' /></button>
                 </div>
               </SwiperSlide>
             ))}
           </Swiper>
         </div>
       </section>
-      {openSlider && <FullScreenSlider onClose={setOpenSlider} />}
+      {openSlider && <FullScreenSlider startIndex={currentIndex} images={projects} onClose={setOpenSlider} />}
     </>
   )
 }

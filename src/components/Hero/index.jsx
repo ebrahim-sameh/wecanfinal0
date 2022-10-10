@@ -10,6 +10,13 @@ import { GrInstagram } from "react-icons/gr";
 import FullScreenSlider from "../FullScreenSlider";
 import Button from "../Button";
 import Aos from "aos";
+import BG from '../images/2.png'
+import BG1 from '../images/bgk/1st library.jpeg'
+import BG2 from '../images/bgk/2nd library.jpeg'
+import BG3 from '../images/bgk/3rd library.jpeg'
+import BG4 from '../images/bgk/4thkitchen.png'
+import BG5 from '../images/bgk/Living Room.jpg'
+import BG6 from '../images/bgk/Living Room(1).jpg'
 
 import "aos/dist/aos.css";
 import "./Hero.scss";
@@ -17,32 +24,41 @@ import "./Hero.scss";
 const Hero = () => {
   const [image, setImage] = useState("");
   const [openSlider, setOpenSlider] = useState(false);
+  const [currIndex, setCurrIndex] = useState(0)
 
   const images = [
     {
+      id: 0,
+      src: BG,
+    },
+    {
       id: 1,
-      src: "https://media.istockphoto.com/photos/modern-living-room-interior-3d-render-picture-id1293762741?b=1&k=20&m=1293762741&s=170667a&w=0&h=2RI8SmBN4MrEZuTvdwRzaeB887x-dukFcQBpyQ-qwS4=",
+      src: BG1,
     },
     {
       id: 2,
-      src: "https://media.istockphoto.com/photos/luxury-furniture-goods-picture-id1350859272?b=1&k=20&m=1350859272&s=170667a&w=0&h=wZ3TXnV30t0-vPXPJSfft8oqmsiO0rKC0EWo795Vw0c=",
+      src: BG5,
     },
     {
       id: 3,
-      src: "https://wallpaperaccess.com/full/2076086.jpg",
+      src: BG3,
     },
     {
       id: 4,
-      src: "https://wallpaperaccess.com/full/2076083.jpg",
+      src: BG4,
     },
     {
       id: 5,
-      src: "https://media.istockphoto.com/photos/modern-living-room-interior-3d-render-picture-id1293762741?b=1&k=20&m=1293762741&s=170667a&w=0&h=2RI8SmBN4MrEZuTvdwRzaeB887x-dukFcQBpyQ-qwS4=",
+      src: BG2,
+    },
+    {
+      id: 6,
+      src: BG6,
     },
   ];
 
   useEffect(() => {
-    setImage(images[0].src);
+    setImage(images[4].src);
     Aos.init({ duration: 1000 });
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
@@ -50,12 +66,9 @@ const Hero = () => {
   return (
     <>
       <section className="hero__section">
-        {image && (
-          <div
-            className="bgk__imgae"
-            style={{ backgroundImage: `url(${image})` }}
-          ></div>
-        )}
+        {image && <div className="gb__image position-absolute">
+          <img src={image} alt="" />
+        </div>}
         <div className="container">
           <div className="hero__content">
             <div className="hero__text">
@@ -107,6 +120,7 @@ const Hero = () => {
               data-aos-delay="350"
             >
               <HeroSliderControls
+                setCurrIndex={setCurrIndex}
                 images={images}
                 setImage={setImage}
                 onOpenSlider={setOpenSlider}
@@ -115,7 +129,7 @@ const Hero = () => {
           </div>
         </div>
       </section>
-      {openSlider && <FullScreenSlider onClose={setOpenSlider} />}
+      {openSlider && <FullScreenSlider startIndex={currIndex} images={images} onClose={setOpenSlider} />}
     </>
   );
 };

@@ -3,6 +3,10 @@ import { BsArrowsFullscreen } from 'react-icons/bs'
 import { FullScreenSlider } from '../';
 import Button from '../Button';
 import Aos from "aos";
+import G1 from '../images/gallary/2.jpg'
+import G2 from '../images/gallary/1.png'
+import G3 from '../images/gallary/Capture1.PNG'
+import G4 from '../images/gallary/1.jpg'
 
 import "aos/dist/aos.css";
 import './Gallary.scss'
@@ -10,6 +14,7 @@ import './Gallary.scss'
 const Gallary = () => {
 
   const [openSlider, setOpenSlider] = useState(false);
+  const [currentIndex, setCurrentIndex] = useState(0)
 
   useEffect(function () {
     Aos.init({ duration: 1000 });
@@ -18,19 +23,19 @@ const Gallary = () => {
   const images = [
     {
       id: 1,
-      src: 'https://livedemo00.template-help.com/wt_prod-25033/images/grid-gallery-1-original.jpg'
+      src: G1
     },
     {
       id: 2,
-      src: 'https://livedemo00.template-help.com/wt_prod-25033/images/grid-gallery-3-original.jpg'
+      src: G2
     },
     {
       id: 3,
-      src: 'https://livedemo00.template-help.com/wt_prod-25033/images/grid-gallery-2-original.jpg'
+      src: G3
     },
     {
       id: 4,
-      src: 'https://livedemo00.template-help.com/wt_prod-25033/images/grid-gallery-4-original.jpg'
+      src: G4
     },
   ];
 
@@ -39,11 +44,14 @@ const Gallary = () => {
       <section className='gallary__section' id='gallary'>
         <h2 className='section__title' data-aos="zoom-in">Gallary</h2>
         <div className='images__container'>
-          {images.map(img => (
+          {images.map((img, i) => (
             <div className='single__image__container' key={img.id} data-aos="fade-up">
               <img src={img.src} alt='' />
               <div className='image__data'>
-                <button onClick={() => setOpenSlider(prev => !prev)}>
+                <button onClick={() => {
+                  setOpenSlider(prev => !prev);
+                  setCurrentIndex(i);
+                }}>
                   <BsArrowsFullscreen />
                 </button>
               </div>
@@ -54,7 +62,7 @@ const Gallary = () => {
           <Button>View More</Button>
         </div>
       </section>
-      {openSlider && <FullScreenSlider onClose={setOpenSlider} />}
+      {openSlider && <FullScreenSlider startIndex={currentIndex} images={images} onClose={setOpenSlider} />}
     </>
   )
 }
