@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.css": "/we-can/static/css/main.e742f536.css",
-    "main.js": "/we-can/static/js/main.2f9d6c50.js",
+    "main.css": "/we-can/static/css/main.592fa98d.css",
+    "main.js": "/we-can/static/js/main.2e291228.js",
     "static/media/Capture1.PNG": "/we-can/static/media/Capture1.87b22f52ea387a734a00.PNG",
     "static/media/1.jpg": "/we-can/static/media/1.4418e796ec7f6fe6ff1f.jpg",
     "static/media/2.jpg": "/we-can/static/media/2.4552af4ea9e4510ae9fa.jpg",
     "static/media/1.png": "/we-can/static/media/1.769af99f2f56cce7e43f.png",
+    "static/media/4.png": "/we-can/static/media/4.e8c7edd4ef291836472c.png",
     "static/media/3.png": "/we-can/static/media/3.f38805503615a9bf3fef.png",
     "static/media/2.png": "/we-can/static/media/2.51bfbd3b50c2f91fa7ea.png",
     "static/media/k.jpg": "/we-can/static/media/k.90b09db9b73466fcd09c.jpg",
@@ -15,6 +16,7 @@
     "static/media/4 th kitchen.png": "/we-can/static/media/4 th kitchen.fe89e87815bc4b03db97.png",
     "static/media/3.jpg": "/we-can/static/media/3.bc48284d64cbc3af11fa.jpg",
     "static/media/4thkitchen.png": "/we-can/static/media/4thkitchen.703197e9d5657d11e999.png",
+    "static/media/4.jpg": "/we-can/static/media/4.caf5cec93fb6d3574c7d.jpg",
     "static/media/Living Room(1).jpg": "/we-can/static/media/Living Room(1).9623ed7bbf41fa81a8e5.jpg",
     "static/media/Living Room.jpg": "/we-can/static/media/Living Room.7ff2a1698cdcbc6a26fd.jpg",
     "static/media/Copy of kitchen3_Unnamed Space-10 - Copy.jpeg": "/we-can/static/media/Copy of kitchen3_Unnamed Space-10 - Copy.697f70dfd356f13d6aae.jpeg",
@@ -24,16 +26,19 @@
     "static/media/3 rdkitchen.jpg": "/we-can/static/media/3 rdkitchen.ec5b64f1d7f6b60ce38b.jpg",
     "static/media/1st library.jpeg": "/we-can/static/media/1st library.d2fce83dbb1ae7595d14.jpeg",
     "static/media/2 nd kitchen.jpg": "/we-can/static/media/2 nd kitchen.d5166e9169028c3b54a9.jpg",
+    "static/media/4th library.jpg": "/we-can/static/media/4th library.a7b562b0ae1f053f5f2e.jpg",
+    "static/media/6th library.jpg": "/we-can/static/media/6th library.40654bb8c29ac6ba8f30.jpg",
     "static/media/1st kitchen.jpeg": "/we-can/static/media/1st kitchen.b30cb60af4e5e8aef78f.jpeg",
+    "static/media/5 th library.jpg": "/we-can/static/media/5 th library.e549ef01b346a035fbd2.jpg",
     "static/media/Junge-Regular.ttf": "/we-can/static/media/Junge-Regular.001b325ee115e9171c2a.ttf",
     "static/media/aoox font.ttf": "/we-can/static/media/aoox font.bf642a7923c6b4030e03.ttf",
     "static/media/we-can-logo2-gold-and-white.png": "/we-can/static/media/we-can-logo2-gold-and-white.412beb7e0d79feee5b7b.png",
     "index.html": "/we-can/index.html",
-    "main.e742f536.css.map": "/we-can/static/css/main.e742f536.css.map",
-    "main.2f9d6c50.js.map": "/we-can/static/js/main.2f9d6c50.js.map"
+    "main.592fa98d.css.map": "/we-can/static/css/main.592fa98d.css.map",
+    "main.2e291228.js.map": "/we-can/static/js/main.2e291228.js.map"
   },
   "entrypoints": [
-    "static/css/main.e742f536.css",
-    "static/js/main.2f9d6c50.js"
+    "static/css/main.592fa98d.css",
+    "static/js/main.2e291228.js"
   ]
 }
