@@ -5,23 +5,21 @@ import Home from "./pages/Home";
 import ContactPage from "./pages/ContactPage";
 import SignleCategory from "./pages/SingleCategry";
 import AboutPage from "./pages/AboutPage";
-import k1p1 from '../src/components/images/Kitchens/k1/1.jpg'
-import k1p2 from '../src/components/images/Kitchens/k1/2.jpg'
-import k1p3 from '../src/components/images/Kitchens/k1/3.jpg'
 
-import k2p1 from '../src/components/images/Kitchens/k2/1.jpg'
-import k2p2 from '../src/components/images/Kitchens/k2/2.jpg'
-import k2p3 from '../src/components/images/Kitchens/k2/3.jpg'
+import k1p1 from '../src/components/images/Kitchens/k1/Copy of kitchen3_Unnamed Space-10.jpeg'
+import k1p2 from '../src/components/images/Kitchens/k1/Copy of kitchen3_Unnamed Space-10 - Copy.jpeg'
+import k1p3 from '../src/components/images/Kitchens/k1/Copy of kitchen3_Unnamed Space-11.jpeg'
+import k1p4 from '../src/components/images/Kitchens/k1/Copy of kitchen3_Unnamed Space-11 - Copy.jpeg'
+import k1p5 from '../src/components/images/Kitchens/k1/Copy of kitchen3_Unnamed Space-11(1).jpeg'
+import k1p6 from '../src/components/images/Kitchens/k1/Copy of kitchen3_Unnamed Space-12 - Copy.jpeg'
 
-import k3p1 from '../src/components/images/Kitchens/k3/1.jpg'
-import k3p2 from '../src/components/images/Kitchens/k3/2.jpg'
-import k3p3 from '../src/components/images/Kitchens/k3/3.jpg'
+import k2p1 from '../src/components/images/Kitchens/k2/4 th kitchen.png'
+import k2p2 from '../src/components/images/Kitchens/k2/4th kitchen.png'
+import k2p3 from '../src/components/images/Kitchens/k2/4thkitchen.png'
 
-import k4p1 from '../src/components/images/Kitchens/k4/1.jpg'
-import k4p2 from '../src/components/images/Kitchens/k4/2.jpg'
+import k3p1 from '../src/components/images/Kitchens/k3/1st kitchen.jpeg'
+import k3p2 from '../src/components/images/Kitchens/k3/1st kitchen.jpeg'
 
-import k5p1 from '../src/components/images/Kitchens/k5/1.jpg'
-import k5p2 from '../src/components/images/Kitchens/k5/2.jpg'
 
 import opti1 from '../src/components/images/OpticalStoreDesign/BrandOptics/310366898_497503539053478_5108431652593121113_n (1).jpg' 
 import opti2 from '../src/components/images/OpticalStoreDesign/BrandOptics/HAD (10).jpg' 
@@ -39,16 +37,14 @@ import optii5 from '../src/components/images/OpticalStoreDesign/DiorOptics/HAD (
 import optii6 from '../src/components/images/OpticalStoreDesign/DiorOptics/WhatsApp Image 2022-10-23 at 2.18.16 AM.jpeg' 
 import optii7 from '../src/components/images/OpticalStoreDesign/DiorOptics//WhatsApp Image 2022-10-23 at 2.18.16 AM (1).jpeg' 
 
-import i1p1 from '../src/components/images/Interior/l1/Living Room.jpg'
-import i1p2 from '../src/components/images/Interior/l1/Living Room(1).jpg'
+import ini1 from '../src/components/images/InteriorDesign/project 1/IMG-20221009-WA0020.jpg'
+import ini2 from '../src/components/images/InteriorDesign/project 1/IMG-20221009-WA0021.jpg'
+import ini3 from '../src/components/images/InteriorDesign/project 1/IMG-20221009-WA0022.jpg'
+import ini4 from '../src/components/images/InteriorDesign/project 1/IMG-20221009-WA0023.jpg'
+import ini5 from '../src/components/images/InteriorDesign/project 1/IMG-20221009-WA0024.jpg'
 
-import i2p1 from '../src/components/images/Interior/l2/1st library.jpeg'
-
-import i3p1 from '../src/components/images/Interior/l3/3rd library.jpeg'
-
-import i4p1 from '../src/components/images/Interior/l4/4th library.jpg'
-import i4p2 from '../src/components/images/Interior/l4/5 th library.jpg'
-import i4p3 from '../src/components/images/Interior/l4/6th library.jpg'
+import inii1 from '../src/components/images/InteriorDesign/project 2/Living Room.jpg'
+import inii2 from '../src/components/images/InteriorDesign/project 2/Living Room(1).jpg'
 
 import a1p1 from '../src/components/images/Accessories/1.jpg'
 import a1p2 from '../src/components/images/Accessories/2.jpg'
@@ -149,57 +145,43 @@ function App() {
       projects: [
         {
           id: 1,
-          title: 'project Name',
+          title: 'project One',
           desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, recusandae!',
           images: [
             {
               id: 1,
-              src: i4p1
+              src: ini1
             },
             {
               id: 2,
-              src: i4p2
+              src: ini2
             },
             {
               id: 3,
-              src: i4p3
+              src: ini3
+            },
+            {
+              id: 4,
+              src: ini4
+            },
+            {
+              id: 5,
+              src: ini5
             },
           ]
         },
         {
           id: 2,
-          title: 'project Name',
+          title: 'project Two',
           desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, recusandae!',
           images: [
             {
               id: 1,
-              src: i3p1
-            }
-          ]
-        },
-        {
-          id: 3,
-          title: 'project Name',
-          desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, recusandae!',
-          images: [
-            {
-              id: 1,
-              src: i2p1
-            }
-          ]
-        },
-        {
-          id: 4,
-          title: 'project Name',
-          desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, recusandae!',
-          images: [
-            {
-              id: 1,
-              src: i1p1
+              src: inii1
             },
             {
               id: 2,
-              src: i1p2
+              src: inii2
             },
           ]
         }
@@ -212,7 +194,7 @@ function App() {
       projects: [
         {
           id: 1,
-          title: 'project Name',
+          title: 'project One',
           desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, recusandae!',
           images: [
             {
@@ -227,11 +209,23 @@ function App() {
               id: 3,
               src: k1p3
             },
+            {
+              id: 4,
+              src: k1p4
+            },
+            {
+              id: 5,
+              src: k1p5
+            },
+            {
+              id: 6,
+              src: k1p6
+            }
           ]
         },
         {
           id: 2,
-          title: 'project Name',
+          title: 'project Two',
           desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, recusandae!',
           images: [
             {
@@ -250,7 +244,7 @@ function App() {
         },
         {
           id: 3,
-          title: 'project Name',
+          title: 'project Three',
           desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, recusandae!',
           images: [
             {
@@ -260,43 +254,9 @@ function App() {
             {
               id: 2,
               src: k3p2
-            },
-            {
-              id: 3,
-              src: k3p3
-            },
-          ]
-        },
-        {
-          id: 4,
-          title: 'project Name',
-          desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, recusandae!',
-          images: [
-            {
-              id: 1,
-              src: k4p1
-            },
-            {
-              id: 2,
-              src: k4p2
-            },
-          ]
-        },
-        {
-          id: 5,
-          title: 'project Name',
-          desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, recusandae!',
-          images: [
-            {
-              id: 1,
-              src: k5p1
-            },
-            {
-              id: 1,
-              src: k5p2
             }
           ]
-        },
+        }
       ]
     },
     {
