@@ -6,7 +6,7 @@ import { BsPerson, BsTelephone } from 'react-icons/bs'
 
 import './MainInput.scss'
 
-const MainInput = ({ placeholder, type, data, setData, name, icon, checkTheValue, error }) => {
+const MainInput = ({ placeholder, type, data, setData, name, icon, checkTheValue, error, require }) => {
 
   const [showPass, setShowPass] = useState(false);
   const [inputIsTouched, setInputIsTouched] = useState(false);
@@ -39,7 +39,7 @@ const MainInput = ({ placeholder, type, data, setData, name, icon, checkTheValue
       <input 
         id={name}
         type={type === 'password' && showPass ? 'text' : type || 'text'} 
-        placeholder={placeholder}
+        placeholder={require ? placeholder + '*' : placeholder}
         value={data[name] || ''}
         onChange={e => onChangeHandler(e)}
         onBlur={() => {
@@ -49,7 +49,7 @@ const MainInput = ({ placeholder, type, data, setData, name, icon, checkTheValue
         onFocus={() => {
           setInputIsTouched(true)
         }}
-        // required
+        required={require}
       />
       <label htmlFor={name}>{inputIcon}</label>
       {error && errorInput && <p className='error__message'>{error}</p>}

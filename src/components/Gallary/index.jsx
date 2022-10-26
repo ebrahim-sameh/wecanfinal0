@@ -3,10 +3,10 @@ import { BsArrowsFullscreen } from 'react-icons/bs'
 import { FullScreenSlider } from '../';
 import Button from '../Button';
 import Aos from "aos";
-import G1 from '../images/gallary/2.jpg'
-import G2 from '../images/gallary/1.png'
-import G3 from '../images/gallary/Capture1.PNG'
-import G4 from '../images/gallary/1.jpg'
+import G1 from '../images/gallary/HAD (10).jpg'
+import G2 from '../images/gallary/HAD (18).jpg'
+import G3 from '../images/gallary/HAD (5).jpg'
+import G4 from '../images/gallary/HAD (6).jpg'
 
 import "aos/dist/aos.css";
 import './Gallary.scss'
@@ -59,7 +59,7 @@ const Gallary = () => {
           ))}
         </div>
         <div data-aos="fade-up">
-          <Button>View More</Button>
+          <Button>Download Catalogue</Button>
         </div>
       </section>
       {openSlider && <FullScreenSlider startIndex={currentIndex} images={images} onClose={setOpenSlider} />}

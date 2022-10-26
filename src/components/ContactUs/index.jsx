@@ -15,15 +15,16 @@ const ContactUs = () => {
       placeholder: 'Your Name',
       icon: 'userName',
       checkTheValue: value => value?.length > 0,
-      error: "This filed can't be empty!"
+      error: "This filed can't be empty!",
+      require: true
     },
     {
       id: 'your__email',
       type: 'email',
       placeholder: 'Email Address',
       icon: 'email',
-      checkTheValue: value => value?.includes('@'),
-      error: "Email must includes '@'!"
+      // checkTheValue: value => value?.includes('@'),
+      // error: "Email must includes '@'!"
     },
     {
       id: 'mobileNumber',
@@ -31,7 +32,8 @@ const ContactUs = () => {
       placeholder: 'Mobile Number',
       icon: 'mobile',
       checkTheValue: value => value?.length > 10,
-      error: "Mobile number Must be more than 10 ch!"
+      error: "Mobile number Must be more than 10 ch!",
+      require: true
     },
     {
       id: 'address',
@@ -39,7 +41,8 @@ const ContactUs = () => {
       placeholder: 'Address',
       icon: 'address',
       checkTheValue: value => value?.length > 0,
-      error: "This filed can't be empty!"
+      error: "This filed can't be empty!",
+      require: true
     },
     // {
     //   id: 'password',
@@ -76,9 +79,16 @@ const ContactUs = () => {
               icon={input.icon}
               checkTheValue={input?.checkTheValue}
               error={input?.error}
+              require={input?.require}
             />
           ))}
         </div>
+        <select defaultValue='Optical' className='select__box'>
+          <option value='Optical'>Optical store design</option>
+          <option value='Interior'>Interior design</option>
+          <option value='Kitchens'>Kitchens</option>
+          <option value='Accessories'>Accessories</option>
+        </select>
         <div className="btns d-flex align-items-center justify-content-center">
           <Button type='submit'>Submit</Button>
         </div>
