@@ -21,10 +21,6 @@
         transition: $transition;
       }
       button {
-        // position: absolute;
-        // top: 50%;
-        // left: 50%;
-        // transform: translate(-50%, -50%);
         background-color: $color__gold;
         z-index: 1;
         display: flex;
@@ -61,4 +57,24 @@
       left: 0;
     }
   }
+}
+.projects__slider .swiper-button-next, 
+.projects__slider .swiper-button-prev {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: $color__gold;
+  border-radius: 50%;
+}
+.projects__slider .swiper-button-next:after, 
+.projects__slider .swiper-button-prev:after {
+  color: #FFF;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
 }

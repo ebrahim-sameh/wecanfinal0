@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import Image from '../images/Kitchens/k.jpg'
-import Image2 from '../images/optics/2.png'
+import Image2 from '../images/2.png'
 import Image3 from '../images/Interior/3rd library.jpeg'
 import Image4 from '../images/Accessories/1.jpg'
 import Aos from "aos";

@@ -1,8 +1,8 @@
-@import '../../styles/variables.scss';
+@import "../../styles/variables.scss";
 
 .about__section {
   padding: 60px 0;
-  background-image: url('../images/2.png');
+  background-image: url("../images/2.png");
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
@@ -11,14 +11,14 @@
   overflow: hidden;
 
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background-color: #000;
-    opacity: .6;
+    opacity: 0.6;
   }
   .about__content {
     position: relative;
@@ -36,8 +36,12 @@
     .about__box {
       padding: 20px;
       border-radius: 6px;
-      backdrop-filter: brightness(.5) blur(4px);
+      backdrop-filter: brightness(0.5) blur(4px);
       flex-basis: calc(50% - 10px);
+      width: 50%;
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
       .about__title {
         font-size: $ft__32;
         margin-bottom: 20px;
@@ -58,12 +62,19 @@
     }
   }
 }
-
-@media(max-width: 991px) {
+.clear__both {
+  clear: both;
+}
+@media (max-width: 991px) {
   .about__section {
     .about__content .about__data {
       flex-direction: column;
       row-gap: 24px;
-    } 
+    }
+  }
+}
+@media (max-width: 767px) {
+  .about__box {
+    width: 100% !important;
   }
 }

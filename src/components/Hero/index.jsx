@@ -87,12 +87,12 @@ const Hero = () => {
                 </div>
                 <ul className="d-flex align-items-center">
                   <li data-aos="fade-up" data-aos-delay="400">
-                    <a href="#home" target="_blank">
+                    <a href="https://web.facebook.com/profile.php?id=100086677671717&_rdc=1&_rdr" target="_blank" rel="noreferrer">
                       <FaFacebookF />
                     </a>
                   </li>
                   <li data-aos="fade-up" data-aos-delay="500">
-                    <a href="#home" target="_blank">
+                    <a href="https://twitter.com/We_Can_Optics" target="_blank" rel="noreferrer">
                       <FaTwitter />
                     </a>
                   </li>

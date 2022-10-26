@@ -43,10 +43,11 @@
             font-weight: 200;
             color: $color__gold;
             display: inline-block;
-            font-weight: $ft__w__b;
-            &::first-letter {
-              color: $color__white;
-            }
+            // font-weight: $ft__w__b;
+            font-family: myFirstFont;
+            // &::first-letter {
+            //   color: $color__white;
+            // }
           }
         }
         p {

@@ -23,10 +23,21 @@ import k4p2 from '../src/components/images/Kitchens/k4/2.jpg'
 import k5p1 from '../src/components/images/Kitchens/k5/1.jpg'
 import k5p2 from '../src/components/images/Kitchens/k5/2.jpg'
 
-import opt1 from '../src/components/images/optics/1.png' 
-import opt2 from '../src/components/images/optics/2.png' 
-import opt3 from '../src/components/images/optics/3.png' 
-import opt4 from '../src/components/images/optics/4.png' 
+import opti1 from '../src/components/images/OpticalStoreDesign/BrandOptics/310366898_497503539053478_5108431652593121113_n (1).jpg' 
+import opti2 from '../src/components/images/OpticalStoreDesign/BrandOptics/HAD (10).jpg' 
+import opti3 from '../src/components/images/OpticalStoreDesign/BrandOptics/HAD (13).jpg' 
+import opti4 from '../src/components/images/OpticalStoreDesign/BrandOptics/HAD (3).jpg' 
+import opti5 from '../src/components/images/OpticalStoreDesign/BrandOptics/HAD (5).jpg' 
+import opti6 from '../src/components/images/OpticalStoreDesign/BrandOptics/HAD (7).jpg' 
+import opti7 from '../src/components/images/OpticalStoreDesign/BrandOptics/HAD (9).jpg' 
+
+import optii1 from '../src/components/images/OpticalStoreDesign/DiorOptics/HAD (14).jpg' 
+import optii2 from '../src/components/images/OpticalStoreDesign/DiorOptics/HAD (18).jpg' 
+import optii3 from '../src/components/images/OpticalStoreDesign/DiorOptics/HAD (19).jpg' 
+import optii4 from '../src/components/images/OpticalStoreDesign/DiorOptics/HAD (6).jpg' 
+import optii5 from '../src/components/images/OpticalStoreDesign/DiorOptics/HAD (8).jpg' 
+import optii6 from '../src/components/images/OpticalStoreDesign/DiorOptics/WhatsApp Image 2022-10-23 at 2.18.16 AM.jpeg' 
+import optii7 from '../src/components/images/OpticalStoreDesign/DiorOptics//WhatsApp Image 2022-10-23 at 2.18.16 AM (1).jpeg' 
 
 import i1p1 from '../src/components/images/Interior/l1/Living Room.jpg'
 import i1p2 from '../src/components/images/Interior/l1/Living Room(1).jpg'
@@ -66,22 +77,69 @@ function App() {
           images: [
             {
               id: 1,
-              src: opt1
+              src: opti1
             },
             {
               id: 2,
-              src: opt2
+              src: opti2
             },
             {
               id: 3,
-              src: opt3
+              src: opti3
             },
             {
-              id: 3,
-              src: opt4
+              id: 4,
+              src: opti4
+            },
+            {
+              id: 5,
+              src: opti5
+            },
+            {
+              id: 6,
+              src: opti6
+            },
+            {
+              id: 7,
+              src: opti7
             },
           ]
-        }
+        },
+        {
+          id: 1,
+          title: 'Dior Optics',
+          desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, recusandae!',
+          images: [
+            {
+              id: 1,
+              src: optii1
+            },
+            {
+              id: 2,
+              src: optii2
+            },
+            {
+              id: 3,
+              src: optii3
+            },
+            {
+              id: 4,
+              src: optii4
+            },
+            {
+              id: 5,
+              src: optii5
+            },
+            {
+              id: 6,
+              src: optii6
+            },
+            {
+              id: 7,
+              src: optii7
+            },
+          ]
+        },
       ]
     },
     {

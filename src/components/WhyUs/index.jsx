@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import Button from '../Button'
 import Aos from "aos";
 import BG from '../images/2.png'
+import Image from '../images/dark-blue-tree.png'
 
 import "aos/dist/aos.css";
 import './WhyUs.scss'
@@ -13,7 +14,10 @@ const WhyUs = () => {
   }, []);
 
   return (
-    <section className='why__us__section'>
+    <section className='why__us__section position-relative'>
+      <div className='bgk__image'>
+        <img src={Image} alt="" />
+      </div>
       <div className="container">
         <h2 className="section__title" data-aos="zoom-in">Why Choose Us</h2>
         <div className="why__content d-flex align-items-center">
