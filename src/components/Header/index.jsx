@@ -11,7 +11,7 @@ const Header = () => {
 
   const [openMenu, setOpenMenu] = useState(false);
   const ctx = useContext(AppContext);
-  const {t, i18n} = useTranslation();
+  const {t} = useTranslation();
   const location = useLocation();
 
   let home = false;

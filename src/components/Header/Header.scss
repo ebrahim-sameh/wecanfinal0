@@ -33,7 +33,14 @@
         opacity: 0;
         transition: $transition;
       }
-
+      &:lang(ar) {
+        &::after {
+          left: auto;
+          right: -12px;
+          border-left-color: transparent;
+          border-right-color: $color__gold;
+        }
+      }
       &.active,
       &:hover {
         color: $color__gold;

@@ -13,7 +13,7 @@ const Home = () => {
       <div className="container">
         <WhyUs />
       </div>
-      <Feedback />
+      {/* <Feedback /> */}
       <Pagination />
     </>
   )

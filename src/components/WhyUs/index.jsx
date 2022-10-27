@@ -29,7 +29,7 @@ const WhyUs = () => {
           <div className="rigth__why" data-aos="fade-left">
             <h4>{t('We_Are_The')} <span>{t('BEST')}</span></h4>
             <p>{t('why__desc')}</p>
-            <Button>{t('Portfolio')}</Button>
+            <Button>{t('Contact_Us')}</Button>
           </div>
         </div>
       </div>

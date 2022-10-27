@@ -16,7 +16,6 @@
   transition: $transition;
   box-shadow: inset 0px 0px 0px -3px #d19d54;
   font-weight: $ft__w__m;
-
   .button__icon {
     border: 12px solid transparent;
     border-left-color: $color__gold;
@@ -30,10 +29,28 @@
       animation: animate .4s linear infinite alternate;
     }
   }
+  &:lang(ar) {
+    .button__icon {
+      border-left-color: transparent;
+      border-right-color: $color__gold;
+    }
+    &:hover {
+      .button__icon {
+        border-left-color: transparent;
+        border-right-color: $bg__color;
+        animation: animate2 .4s linear infinite alternate;
+      }
+    }
+  }
 }
 
 @keyframes animate {
   to {
     transform: translateX(4px);
+  }
+}
+@keyframes animate2 {
+  to {
+    transform: translateX(-4px);
   }
 }

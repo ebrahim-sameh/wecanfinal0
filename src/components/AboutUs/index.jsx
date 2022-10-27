@@ -20,7 +20,7 @@ const AboutUs = () => {
           <h2 className='section__title' data-aos="zoom-in">{t('About_Us')}</h2>
           <div className="about__data">
             <div className="about__box float-start" data-aos="fade-right">
-              <h4 className='about__title'>{t('who_we_are')}</h4>
+              <h4 className='about__title'>{t('who_we_are?')}</h4>
               <p>{t('about__1desc')}</p>
             </div>
             <div className='clear__both'></div>

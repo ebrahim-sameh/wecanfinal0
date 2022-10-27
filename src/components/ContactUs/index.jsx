@@ -31,7 +31,7 @@ const ContactUs = () => {
     {
       id: 'mobileNumber',
       type: 'number',
-      placeholder: `${('Mobile__Number')}`,
+      placeholder: `${t('Mobile__Number')}`,
       icon: 'mobile',
       checkTheValue: value => value?.length > 10,
       error: "Mobile number Must be more than 10 ch!",
@@ -66,7 +66,7 @@ const ContactUs = () => {
 
   return (
    <section className='contact__us__section'>
-    <h2 className='section__title'>Contact Us</h2>
+    <h2 className='section__title'>{t('Contact_Us')}</h2>
     <div className="container">
       <form className='contact__form' onSubmit={e => e.preventDefault()}>
         <div className="form__inputs">

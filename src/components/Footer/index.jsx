@@ -23,7 +23,8 @@ const Footer = () => {
           </div>
           <div className="footer__box d-flex flex-column">
             <h4 className='d-flex align-items-center'><HiLocationMarker />{t('Our_Location')}</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, nesciunt?</p>
+            <p>{t('location')}</p>
+            <a className='location__btn' href='https://www.google.com/maps/place/We+Can/@31.1391992,30.130555,17z/data=!3m1!4b1!4m6!3m5!1s0x14f5dfb3d21175bf:0xb2cb903e75101a74!8m2!3d31.1391992!4d30.130555!16s%2Fg%2F11tdrtsyd8' target='_blank' rel="noreferrer">{t('Show_Location')}</a>
           </div>
         </div>
         <div className="footer__links d-flex align-items-center justify-content-between">

@@ -61,7 +61,7 @@ const Gallary = () => {
           ))}
         </div>
         <div data-aos="fade-up">
-          <Button>{t('Download_Catalogue')}</Button>
+          {/* <Button>{t('Download_Catalogue')}</Button> */}
         </div>
       </section>
       {openSlider && <FullScreenSlider startIndex={currentIndex} images={images} onClose={setOpenSlider} />}

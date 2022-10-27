@@ -37,6 +37,19 @@
       }
     }
   }
+  .location__btn {
+    border: 1px solid;
+    transition: $transition;
+    width: fit-content;
+    padding: 6px 10px;
+    margin-top: 4px;
+    border-radius: 4px;
+    font-weight: 500;
+    &:hover {
+      color: #0c0b10 !important;
+      background-color: $color__gold;
+    }
+  }
 }
 
 @media(max-width: 575px) {
