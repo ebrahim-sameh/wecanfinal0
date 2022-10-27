@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/we-can/static/css/main.7bc0bb6b.css",
-    "main.js": "/we-can/static/js/main.8b8121da.js",
+    "main.css": "/we-can/static/css/main.4b9822ce.css",
+    "main.js": "/we-can/static/js/main.e746c61c.js",
     "static/media/HAD (6).jpg": "/we-can/static/media/HAD (6).60aecee55090bf85d783.jpg",
     "static/media/HAD (5).jpg": "/we-can/static/media/HAD (5).7010b68b313a29b04613.jpg",
     "static/media/HAD (13).jpg": "/we-can/static/media/HAD (13).664faa0d47eb98040595.jpg",
@@ -52,11 +52,11 @@
     "static/media/aoox font.ttf": "/we-can/static/media/aoox font.bf642a7923c6b4030e03.ttf",
     "static/media/we-can-logo2-gold-and-white.png": "/we-can/static/media/we-can-logo2-gold-and-white.412beb7e0d79feee5b7b.png",
     "index.html": "/we-can/index.html",
-    "main.7bc0bb6b.css.map": "/we-can/static/css/main.7bc0bb6b.css.map",
-    "main.8b8121da.js.map": "/we-can/static/js/main.8b8121da.js.map"
+    "main.4b9822ce.css.map": "/we-can/static/css/main.4b9822ce.css.map",
+    "main.e746c61c.js.map": "/we-can/static/js/main.e746c61c.js.map"
   },
   "entrypoints": [
-    "static/css/main.7bc0bb6b.css",
-    "static/js/main.8b8121da.js"
+    "static/css/main.4b9822ce.css",
+    "static/js/main.e746c61c.js"
   ]
 }
