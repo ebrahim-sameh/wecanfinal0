@@ -3,22 +3,26 @@ import { BsTelephoneFill } from 'react-icons/bs'
 import { HiLocationMarker } from 'react-icons/hi'
 import { FaFacebookF, FaTwitter, FaLinkedinIn, FaDribbble } from 'react-icons/fa'
 import { GrInstagram } from 'react-icons/gr'
+import { useTranslation } from "react-i18next";
 
 import './Footer.scss'
 
 const Footer = () => {
+
+  const {t} = useTranslation();
+
   return (
     <div className='footer'>
       <div className="container">
         <div className="footer__content d-flex align-items-center justify-content-between">
           <div className="footer__box d-flex flex-column">
-            <h4 className='d-flex align-items-center'><BsTelephoneFill />Contact Phones</h4>
+            <h4 className='d-flex align-items-center'><BsTelephoneFill />{t('Contact_Phones')}</h4>
             <a href='tel:01013503160'>01013503160</a>
             <a href='tel:01068619636'>01068619636</a>
             <a href='mailto:Wecanegy.wood@gmail.com'>Wecanegy.wood@gmail.com</a>
           </div>
           <div className="footer__box d-flex flex-column">
-            <h4 className='d-flex align-items-center'><HiLocationMarker />Our Location</h4>
+            <h4 className='d-flex align-items-center'><HiLocationMarker />{t('Our_Location')}</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, nesciunt?</p>
           </div>
         </div>
@@ -30,7 +34,7 @@ const Footer = () => {
           <a href="#home" target='_blank'><FaDribbble /></a>
         </div>
         <div className="copy__rigth d-flex flex-column align-items-center justify-content-center">
-          <p>© 2022 We Can Wooden Products. All Rights Reserved.</p>
+          <p>{t('footer__desc')}</p>
           <p>Privacy Policy | Terms of Service</p>
         </div>
       </div>

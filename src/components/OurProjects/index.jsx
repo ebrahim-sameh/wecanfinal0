@@ -18,6 +18,7 @@ import P12 from '../images/projects/Copy of kitchen3_Unnamed Space-10 - Copy.jpe
 import P13 from '../images/projects/5th kitchen.png'
 import FullScreenSlider from '../FullScreenSlider';
 import Aos from "aos";
+import { useTranslation } from "react-i18next";
 
 import "aos/dist/aos.css";
 import "swiper/css";
@@ -27,7 +28,8 @@ import './OurProjects.scss'
 const OurProjects = () => {
 
   const [openSlider, setOpenSlider] = useState(false);
-  const [currentIndex, setCurtrentIndex] = useState(0)
+  const [currentIndex, setCurtrentIndex] = useState(0);
+  const {t} = useTranslation();
 
   useEffect(function () {
     Aos.init({ duration: 1000 });
@@ -92,7 +94,7 @@ const OurProjects = () => {
     <>
       <section className='our__projects__section' id='our-projects'>
         <div className="container">
-          <h2 className='section__title' data-aos="zoom-in">Our Projects</h2>
+          <h2 className='section__title' data-aos="zoom-in">{t('Our_Projects')}</h2>
         </div>
         <div className='projects__container'>
           <Swiper
@@ -118,6 +120,7 @@ const OurProjects = () => {
               }
             }}
             modules={[Autoplay, Navigation]}
+            dir='rtl'
             className="projects__slider"
           >
             {projects.map((project, i) => (

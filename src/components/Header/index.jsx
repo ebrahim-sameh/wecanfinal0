@@ -1,12 +1,17 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import Logo from "../images/we-can-logo2-gold-and-white.png";
 import { MdClose, MdOutlineMenu } from 'react-icons/md'
+import { useTranslation } from "react-i18next";
+import AppContext from "../../store/app-context";
 
 import "./Header.scss";
+
 const Header = () => {
 
   const [openMenu, setOpenMenu] = useState(false);
+  const ctx = useContext(AppContext);
+  const {t, i18n} = useTranslation();
   const location = useLocation();
 
   let home = false;
@@ -30,7 +35,7 @@ const Header = () => {
               to="/we-can"
               className={({ isActive }) => (isActive ? "active" : "")}
             >
-              Home
+               {t('main')}
             </NavLink>
           </li>
           <li>
@@ -39,19 +44,19 @@ const Header = () => {
               to="/about-us"
               className={({ isActive }) => (isActive ? "active" : "")}
             >
-              About Us
+              {t('About_Us')}
             </NavLink>
           </li>
           {home && (
             <>
               <li onClick={() => setOpenMenu(false)}>
-                <a href="#gallary">Gallary</a>
+                <a href="#gallary">{t('Gallary')}</a>
               </li>
               {/* <li onClick={() => setOpenMenu(false)}>
                 <a href="#about-us">About Us</a>
               </li> */}
               <li onClick={() => setOpenMenu(false)}>
-                <a href="#our-projects">Our Projects</a>
+                <a href="#our-projects">{t('Our_Projects')}</a>
               </li>
             </>
           )}
@@ -61,8 +66,11 @@ const Header = () => {
               to="/contact-us"
               className={({ isActive }) => (isActive ? "active" : "")}
             >
-              Contact Us
+              {t('Contact_Us')}
             </NavLink>
+          </li>
+          <li>
+            <button className="toggle__lang" onClick={() => ctx.toggleLang()}>{ctx.lang === 'ar' ? 'الانجليزية' : 'Arabic'}</button>
           </li>
           <button className="close__btn" onClick={() => setOpenMenu(false)}><MdClose /></button>
         </ul>

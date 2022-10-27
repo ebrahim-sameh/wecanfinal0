@@ -3,12 +3,14 @@ import Button from '../Button'
 import Aos from "aos";
 import BG from '../images/2.png'
 import Image from '../images/dark-blue-tree.png'
+import { useTranslation } from "react-i18next";
 
 import "aos/dist/aos.css";
 import './WhyUs.scss'
 
 const WhyUs = () => {
 
+  const {t} = useTranslation();
   useEffect(function () {
     Aos.init({ duration: 1000 });
   }, []);
@@ -25,9 +27,9 @@ const WhyUs = () => {
             <img src={BG} alt="" />
           </div>
           <div className="rigth__why" data-aos="fade-left">
-            <h4>We Are The <span>BEST</span></h4>
-            <p>choosing the right company is key to getting you what you need. There are plenty of options available in the wood industry in Egypt, so it is crucial to purchase a service from a company that understands your need. We focus on the here and now, basing our decisions on what is most practical for our customers. We strive to create a positive impact in the digital landscape, by spreading our beliefs through the products we build.</p>
-            <Button>Portfolio</Button>
+            <h4>{t('We_Are_The')} <span>{t('BEST')}</span></h4>
+            <p>{t('why__desc')}</p>
+            <Button>{t('Portfolio')}</Button>
           </div>
         </div>
       </div>

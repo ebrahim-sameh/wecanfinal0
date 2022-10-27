@@ -17,6 +17,7 @@ import BG3 from '../images/bgk/3rd library.jpeg'
 import BG4 from '../images/bgk/4thkitchen.png'
 import BG5 from '../images/bgk/Living Room.jpg'
 import BG6 from '../images/bgk/Living Room(1).jpg'
+import { useTranslation } from "react-i18next";
 
 import "aos/dist/aos.css";
 import "./Hero.scss";
@@ -24,7 +25,8 @@ import "./Hero.scss";
 const Hero = () => {
   const [image, setImage] = useState("");
   const [openSlider, setOpenSlider] = useState(false);
-  const [currIndex, setCurrIndex] = useState(0)
+  const [currIndex, setCurrIndex] = useState(0);
+  const {t} = useTranslation();
 
   const images = [
     {
@@ -73,17 +75,17 @@ const Hero = () => {
           <div className="hero__content">
             <div className="hero__text">
               <h1 className="hero__title" data-aos="fade-up">
-                <span>WE CAN</span>{" "}
+                <span>{t("WE_CAN")}</span>{" "}
                 <span data-aos="fade-up" data-aos-delay="150">
-                  Wooden Products
+                  {t("Wooden_Products")}
                 </span>
               </h1>
               <p data-aos="fade-up" data-aos-delay="300">
-                WE CAN is a B2B and B2C company dedicated to the design and manufacture of wooden products in several categories.
+                {t('hero_desc')}
               </p>
               <div className="hero__links d-flex flex-column  justify-content-between">
                 <div data-aos="fade-up" data-aos-delay="350">
-                  <Button>Work With Us</Button>
+                  <Button>{t('Work_With_Us')}</Button>
                 </div>
                 <ul className="d-flex align-items-center">
                   <li data-aos="fade-up" data-aos-delay="400">

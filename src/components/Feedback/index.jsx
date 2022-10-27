@@ -1,12 +1,15 @@
 import React from 'react'
 import { Swiper, SwiperSlide } from "swiper/react"
 import { Mousewheel, Pagination, Autoplay } from "swiper"
+import { useTranslation } from "react-i18next";
 
 import "swiper/css"
 import "swiper/css/pagination"
 import './Feedback.scss'
 
 const Feedback = () => {
+
+  const {t} = useTranslation();
 
   const customers = [
     {
@@ -40,7 +43,7 @@ const Feedback = () => {
       <div className="over__lay"></div>
       <div className="container">
         <div className="testmony__content">
-          <h2 className='section__title' data-aos='zoom-in'>Testimonials</h2>
+          <h2 className='section__title' data-aos='zoom-in'>{t('Testimonials')}</h2>
           <div className="testimony_slider"
             data-aos='fade-up' 
             data-aos-duration="1000" 

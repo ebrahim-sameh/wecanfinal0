@@ -7,6 +7,7 @@ import G1 from '../images/gallary/HAD (10).jpg'
 import G2 from '../images/gallary/HAD (18).jpg'
 import G3 from '../images/gallary/HAD (5).jpg'
 import G4 from '../images/gallary/HAD (6).jpg'
+import { useTranslation } from "react-i18next";
 
 import "aos/dist/aos.css";
 import './Gallary.scss'
@@ -14,7 +15,8 @@ import './Gallary.scss'
 const Gallary = () => {
 
   const [openSlider, setOpenSlider] = useState(false);
-  const [currentIndex, setCurrentIndex] = useState(0)
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const {t} = useTranslation();
 
   useEffect(function () {
     Aos.init({ duration: 1000 });
@@ -42,7 +44,7 @@ const Gallary = () => {
   return (
     <>
       <section className='gallary__section' id='gallary'>
-        <h2 className='section__title' data-aos="zoom-in">Gallary</h2>
+        <h2 className='section__title' data-aos="zoom-in">{t('Gallary')}</h2>
         <div className='images__container'>
           {images.map((img, i) => (
             <div className='single__image__container' key={img.id} data-aos="fade-up">
@@ -59,7 +61,7 @@ const Gallary = () => {
           ))}
         </div>
         <div data-aos="fade-up">
-          <Button>Download Catalogue</Button>
+          <Button>{t('Download_Catalogue')}</Button>
         </div>
       </section>
       {openSlider && <FullScreenSlider startIndex={currentIndex} images={images} onClose={setOpenSlider} />}

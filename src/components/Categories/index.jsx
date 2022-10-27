@@ -5,39 +5,42 @@ import Image2 from '../images/2.png'
 import Image3 from '../images/InteriorDesign/project 1/IMG-20221009-WA0021.jpg'
 import Image4 from '../images/Accessories/1.jpg'
 import Aos from "aos";
+import { useTranslation } from "react-i18next";
 
 import "aos/dist/aos.css";
 import './Categories.scss'
 
 const Categories = () => {
+  
+  const {t} = useTranslation();
 
   const categories = [
     {
       id: 1,
-      title: 'Optical store design',
+      title: `${t('Optical_store_design')}`,
       href: '/optical-store-design',
-      desc:'You can easily display your products and services in a way that is both elegant and practical, with our trendy and creative optic store design.',
+      desc:`${t('optical__desc')}`,
       img: Image2
     },
     {
       id: 2,
-      title: 'Interior design',
+      title: `${t('Interior_design')}`,
       href: '/interior-design',
-      desc: "When it comes to interior design, there's a lot to choose from. We recognise that every detail is important, so we offer a wide choice of furniture and decorations.",
+      desc: `${t('interior__desc')}`,
       img: Image3
     },
     {
       id: 3,
-      title: 'Kitchens',
+      title: `${t('Kitchens')}`,
       href: '/kitchens',
-      desc:'We have everything you need to bring your dream kitchen to life. Call us today to help make your vision a reality!',
+      desc: `${t('Kitchens__desc')}`,
       img: Image
     },
     {
       id: 4,
-      title: 'Accessories',
+      title: `${t('Accessories')}`,
       href: '/accessories',
-      desc:'Our range of wooden accessories is perfect for adding a touch of nature to any room.',
+      desc: `${t('Accessories__desc')}`,
       img: Image4
     },
   ];
@@ -49,11 +52,11 @@ const Categories = () => {
 
   return (
     <section className='categories__section'>
-      <h2 className="section__title" data-aos="zoom-in">Categories</h2>
+      <h2 className="section__title" data-aos="zoom-in">{t('Categories')}</h2>
       <div className="categorise__container">
         {categories.map((category, i) => (
           <div key={category.id} className='signle__category' data-aos="fade-up" data-aos-delay={`${i}00`}>
-            <Link to={category.href}>Show More</Link>
+            <Link to={category.href}>{t('Show_More')}</Link>
             <img src={category.img} alt='Category__image' />
             <div className='category__details'>
               <h4>{category.title}</h4>

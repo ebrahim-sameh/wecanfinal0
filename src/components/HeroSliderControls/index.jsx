@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Swiper, SwiperSlide } from "swiper/react"
 import { FreeMode, Autoplay } from "swiper";
 import { BsFullscreen } from 'react-icons/bs'
@@ -8,6 +8,7 @@ import "swiper/css/free-mode";
 import './HeroSliderControls.scss'
 
 const HeroSliderControls = ({ images, setImage, onOpenSlider, setCurrIndex }) => {
+
   return (
     <div className='bgk__control__container'>
       <Swiper
@@ -20,6 +21,7 @@ const HeroSliderControls = ({ images, setImage, onOpenSlider, setCurrIndex }) =>
         }}
         modules={[FreeMode, Autoplay]}
         className="bgk__control"
+        dir={'rtl'}
       >
         {images.map((img, i) => (
           <SwiperSlide key={img.id}>
