@@ -40,5 +40,11 @@
   "Mobile__Number": "Mobile Number",
   "Address": "Address",
   "error__message": "This filed can't be empty!",
-  "Send": "Send"
+  "Send": "Send",
+  "Why_Choose_Us": "Why Choose Us",
+  "Brand_Optics": "Brand Optics",
+  "Dior_Optics": "Dior Optics",
+  "project_One": "project One",
+  "project_Two": "project Two",
+  "project_Three": "project Three"
 }

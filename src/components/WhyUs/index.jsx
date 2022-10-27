@@ -21,7 +21,7 @@ const WhyUs = () => {
         <img src={Image} alt="" />
       </div>
       <div className="container">
-        <h2 className="section__title" data-aos="zoom-in">Why Choose Us</h2>
+        <h2 className="section__title" data-aos="zoom-in">{t('Why_Choose_Us')}</h2>
         <div className="why__content d-flex align-items-center">
           <div className="left__why" data-aos="fade-right">
             <img src={BG} alt="" />

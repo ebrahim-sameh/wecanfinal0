@@ -50,6 +50,7 @@ import a1p1 from '../src/components/images/Accessories/1.jpg'
 import a1p2 from '../src/components/images/Accessories/2.jpg'
 import a1p3 from '../src/components/images/Accessories/3.jpg'
 import a1p4 from '../src/components/images/Accessories/4.jpg'
+import { useTranslation } from "react-i18next";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles/app.scss";
@@ -60,15 +61,16 @@ import "bootstrap/js/dist/button";
 
 function App() {
 
+  const {t} = useTranslation();
   const categories = [
     {
       id: 1,
-      title: 'Optical store design',
-      desc:'You can easily display your products and services in a way that is both elegant and practical, with our trendy and creative optic store design.',
+      title: `${t('Optical_store_design')}`,
+      desc: `${(t('optical__desc'))}`,
       projects: [
         {
           id: 1,
-          title: 'project Name',
+          title: `${t('Brand_Optics')}`,
           desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, recusandae!',
           images: [
             {
@@ -103,7 +105,7 @@ function App() {
         },
         {
           id: 1,
-          title: 'Dior Optics',
+          title: `${t('Dior_Optics')}`,
           desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, recusandae!',
           images: [
             {
@@ -140,12 +142,12 @@ function App() {
     },
     {
       id: 2,
-      title: 'Interior design',
-      desc: "When it comes to interior design, there's a lot to choose from. We recognise that every detail is important, so we offer a wide choice of furniture and decorations.",
+      title: `${t('Interior_design')}`,
+      desc: `${t('interior__desc')}`,
       projects: [
         {
           id: 1,
-          title: 'project One',
+          title: `${t('project_One')}`,
           desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, recusandae!',
           images: [
             {
@@ -172,7 +174,7 @@ function App() {
         },
         {
           id: 2,
-          title: 'project Two',
+          title: `${t('project_Two')}`,
           desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, recusandae!',
           images: [
             {
@@ -189,12 +191,12 @@ function App() {
     },
     {
       id: 3,
-      title: 'Kitchens',
-      desc:'We have everything you need to bring your dream kitchen to life. Call us today to help make your vision a reality!',
+      title: `${t('Kitchens')}`,
+      desc:`${t('Kitchens__desc')}`,
       projects: [
         {
           id: 1,
-          title: 'project One',
+          title: `${t('projectOne')}`,
           desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, recusandae!',
           images: [
             {
@@ -225,7 +227,7 @@ function App() {
         },
         {
           id: 2,
-          title: 'project Two',
+          title: `${t('project_Two')}`,
           desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, recusandae!',
           images: [
             {
@@ -244,7 +246,7 @@ function App() {
         },
         {
           id: 3,
-          title: 'project Three',
+          title: `${t('project_Three')}`,
           desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, recusandae!',
           images: [
             {
@@ -261,12 +263,12 @@ function App() {
     },
     {
       id: 4,
-      title: 'Accessories',
-      desc:'Our range of wooden accessories is perfect for adding a touch of nature to any room.',
+      title: `${t('Accessories')}`,
+      desc: `${t('Accessories__desc')}`,
       projects: [
         {
           id: 1,
-          title: 'project Name',
+          title: `${t('project_One')}`,
           desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, recusandae!',
           images: [
             {
