@@ -25,17 +25,17 @@ const AboutUs = () => {
             </div>
             <div className='clear__both'></div>
             <div className="about__box float-end" data-aos="fade-left">
-              <h4 className='about__title'>{t('our_vision')}</h4>
+              <h4 className='about__title'>{t('Our_vision!')}</h4>
               <p>{t('about__2desc')}</p>
             </div>
             <div className='clear__both'></div>
             <div className="about__box float-start" data-aos="fade-right">
-              <h4 className='about__title'>{t('our_mission')}</h4>
+              <h4 className='about__title'>{t('Our_mission!')}</h4>
               <p>{t('about__3desc')}</p>
             </div>
             <div className='clear__both'></div>
             <div className="about__box float-end" data-aos="fade-left">
-              <h4 className='about__title'>{t('our_history!')}</h4>
+              <h4 className='about__title'>{t('Our_history!')}</h4>
               <p>{t('about__4desc')}</p>
             </div>
             <div className='clear__both'></div>
