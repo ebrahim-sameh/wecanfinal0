@@ -297,7 +297,7 @@ function App() {
     <>
       <Header />
       <Routes>
-        {/* <Route path="/" element={<Home />} /> */}
+        <Route path="/" element={<Home />} />
         <Route path='/' element={<Navigate to='we-can' />} />
         <Route path="/we-can" index element={<Home />} />
         <Route path="/contact-us" element={<ContactPage />} />
