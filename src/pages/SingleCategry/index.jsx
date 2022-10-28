@@ -37,7 +37,7 @@ const SignleCategory = ({ data }) => {
                     </div>
                   ))}
                 </div>
-                <p>{project.desc}</p>
+//                 <p>{project.desc}</p>
               </div>
             ))}
           </div>
