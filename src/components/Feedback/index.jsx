@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/img-redundant-alt */
 import React from 'react'
 import { Swiper, SwiperSlide } from "swiper/react"
 import { Mousewheel, Pagination, Autoplay } from "swiper"

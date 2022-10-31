@@ -69,7 +69,6 @@
         align-items: center;
         text-align: center;
         line-height: 52px;
-        font-weight: $ft__w__m;
         span {
           &:first-of-type {
             font-family: myFirstFont;
@@ -82,6 +81,10 @@
             font-weight: $ft__w__b;
             color: $color__gold;
             font-size: $ft__38;
+          }
+          &:lang(ar) {
+            line-height: 88px;
+            font-family: 'Noto Kufi Arabic', sans-serif;
           }
         }
       }

@@ -9,6 +9,7 @@ import './HeroSliderControls.scss'
 
 const HeroSliderControls = ({ images, setImage, onOpenSlider, setCurrIndex }) => {
 
+
   return (
     <div className='bgk__control__container'>
       <Swiper

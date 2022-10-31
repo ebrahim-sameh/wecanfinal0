@@ -18,7 +18,7 @@
     transition: $transition;
     height: 24px;
     overflow: hidden;
-    button {
+    .toggle__pagination {
       width: 24px;
       height: 24px;
       display: flex;
@@ -33,7 +33,7 @@
       height: 120px;
     }
     li {
-      a {
+      button:not(.toggle__pagination) {
         width: 14px;
         height: 14px;
         border-radius: 50%;

@@ -15,6 +15,7 @@
   }
   .nav__links {
     column-gap: 34px;
+    .scroll__btn,
     a {
       position: relative;
       transition: $transition;
@@ -111,6 +112,7 @@
       &.open__menu {
         transform: translateX(0);
       }
+      .scroll__btn,
       a {
         font-size: $ft__24;
         &.active::after, 

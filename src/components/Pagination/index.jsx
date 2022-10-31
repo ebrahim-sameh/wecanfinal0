@@ -1,47 +1,49 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import { BsPlus } from 'react-icons/bs'
 import { BiMinus } from 'react-icons/bi'
 
 import './Pagination.scss'
+import AppContext from '../../store/app-context'
 
 const Pagination = () => {
 
-  const [open, setOpen] = useState(false)
+  const [open, setOpen] = useState(false);
+  const ctx = useContext(AppContext);
+
+  const scrollToSection = (elementRef) => {
+    window.scrollTo(elementRef)
+  };
 
   return (
     <div className='main__pagination'>
-      {/* <button 
-        onClick={() => setOpen(prev => !prev)}
-      >
-        {!open ? <BsPlus /> : <BiMinus />}
-      </button> */}
       <ul className={open ? 'show' : ''}>
         <li>
           <button 
             onClick={() => setOpen(prev => !prev)}
+            className='toggle__pagination'
             >
             {!open ? <BsPlus /> : <BiMinus />}
           </button>
         </li>
         <li>
-          <a href="#">
-            <span className='p_tooltip'>Home</span>
-          </a>
+          <button onClick={() => {}}>
+            <span className='p_tooltip' onClick={() => window.scrollTo(0, 0)}>Home</span>
+          </button>
         </li>
         <li>
-          <a href="#gallary">
+          <button onClick={() => scrollToSection(ctx.GalleryOffsetTop)}>
             <span className='p_tooltip'>Gallary</span>
-          </a>
+          </button>
         </li>
         <li>
-          <a href="#about-us">
-            <span className='p_tooltip'>About Us</span>
-          </a>
+          <button onClick={() => scrollToSection(ctx.WhyUsOffsetTop)}>
+            <span className='p_tooltip'>Why Us</span>
+          </button>
         </li>
         <li>
-          <a href="#our-projects">
+          <button onClick={() => scrollToSection(ctx.OurProjectsOffsetTop)}>
             <span className='p_tooltip'>Our Projects</span>
-          </a>
+          </button>
         </li>
       </ul>
     </div>

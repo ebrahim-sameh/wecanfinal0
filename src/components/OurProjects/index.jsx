@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useRef, useState } from 'react'
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper";
 import { AiOutlineCompress } from 'react-icons/ai'
@@ -24,15 +24,25 @@ import "aos/dist/aos.css";
 import "swiper/css";
 import "swiper/css/navigation";
 import './OurProjects.scss'
+import AppContext from '../../store/app-context';
 
 const OurProjects = () => {
 
   const [openSlider, setOpenSlider] = useState(false);
   const [currentIndex, setCurtrentIndex] = useState(0);
   const {t} = useTranslation();
+  const OurProjects = useRef(null);
+  const ctx = useContext(AppContext);
+
+
 
   useEffect(function () {
     Aos.init({ duration: 1000 });
+    ctx.setOurProjectsOffsetTop({
+      top: OurProjects.current.offsetTop,
+      behavior: 'smooth'
+    });
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const projects = [
@@ -92,7 +102,7 @@ const OurProjects = () => {
 
   return (
     <>
-      <section className='our__projects__section' id='our-projects'>
+      <section ref={OurProjects} className='our__projects__section' id='our-projects'>
         <div className="container">
           <h2 className='section__title' data-aos="zoom-in">{t('Our_Projects')}</h2>
         </div>

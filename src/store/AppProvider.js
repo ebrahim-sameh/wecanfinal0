@@ -6,6 +6,9 @@ const AppProvider = (props) => {
 
   const {i18n} = useTranslation();
   const [lang, setLang] = useState('en');
+  const [GalleryOffsetTop, setGalleryOffsetTop] = useState(null);
+  const [OurProjectsOffsetTop, setOurProjectsOffsetTop] = useState(null);
+  const [WhyUsOffsetTop, setWhyUsOffsetTop] = useState(null);
 
   // =================== Set Language := ======================== //
 
@@ -44,6 +47,7 @@ const AppProvider = (props) => {
         document.getElementsByTagName('html')[0].setAttribute("lang", "ar");
       }
     }    
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   },[]);
 
 
@@ -53,6 +57,12 @@ const AppProvider = (props) => {
     <AppContext.Provider value={{
       lang: lang,
       toggleLang: setToggleLang,
+      setGalleryOffsetTop: setGalleryOffsetTop,
+      OurProjectsOffsetTop: OurProjectsOffsetTop,
+      setOurProjectsOffsetTop: setOurProjectsOffsetTop,
+      GalleryOffsetTop: GalleryOffsetTop,
+      setWhyUsOffsetTop: setWhyUsOffsetTop,
+      WhyUsOffsetTop: WhyUsOffsetTop,
     }}>
         {props.children}
     </AppContext.Provider>

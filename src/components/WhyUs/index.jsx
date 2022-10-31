@@ -1,9 +1,10 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useRef, useContext } from 'react'
+import { useTranslation } from "react-i18next";
+import AppContext from '../../store/app-context';
 import Button from '../Button'
 import Aos from "aos";
 import BG from '../images/2.png'
 import Image from '../images/dark-blue-tree.png'
-import { useTranslation } from "react-i18next";
 
 import "aos/dist/aos.css";
 import './WhyUs.scss'
@@ -11,12 +12,22 @@ import './WhyUs.scss'
 const WhyUs = () => {
 
   const {t} = useTranslation();
+  const WhyUs = useRef(null);
+  const ctx = useContext(AppContext);
+  
   useEffect(function () {
     Aos.init({ duration: 1000 });
+    ctx.setWhyUsOffsetTop({
+      top: WhyUs.current.offsetTop,
+      behavior: 'smooth'
+    });
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+
+
   return (
-    <section className='why__us__section position-relative'>
+    <section ref={WhyUs} className='why__us__section position-relative'>
       <div className='bgk__image'>
         <img src={Image} alt="" />
       </div>

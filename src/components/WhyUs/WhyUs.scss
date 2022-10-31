@@ -27,10 +27,6 @@
         }
       }
       &.rigth__why {
-        // display: flex;
-        // flex-direction: column;
-        // justify-content: space-between;
-        // row-gap: 10px;
         h4 {
           font-size: $ft__38;
           color: $color__gray;
@@ -38,16 +34,18 @@
           letter-spacing: -.03em;
           font-family: myFirstFont1;
           line-height: 36px;
+          &:lang(ar) {
+            font-family: 'Noto Kufi Arabic', sans-serif;
+          }
           span {
             font-size: $ft__48;
             font-weight: 200;
             color: $color__gold;
             display: inline-block;
-            // font-weight: $ft__w__b;
             font-family: myFirstFont;
-            // &::first-letter {
-            //   color: $color__white;
-            // }
+            &:lang(ar) {
+              font-family: 'Noto Kufi Arabic', sans-serif;
+            }
           }
         }
         p {
