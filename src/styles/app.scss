@@ -23,6 +23,11 @@ body {
   &:lang(ar) {
     font-family: 'Noto Kufi Arabic', sans-serif;
   }
+  background-image: url('../components/images/golden-tree.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 100% 100%;
+  background-size: 400px;
 }
 button,
 a:hover,
@@ -79,6 +84,7 @@ input {
     height: 100%;
     object-fit: cover;
   }
+  display: none !important;
 }
 @media(max-width: 1199px) {
   .section__title {
