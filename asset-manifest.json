@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/we-can/static/css/main.8fb08469.css",
+    "main.css": "/we-can/static/css/main.01de2a70.css",
     "main.js": "/we-can/static/js/main.41fa1e44.js",
     "static/media/HAD (6).jpg": "/we-can/static/media/HAD (6).60aecee55090bf85d783.jpg",
     "static/media/HAD (5).jpg": "/we-can/static/media/HAD (5).7010b68b313a29b04613.jpg",
@@ -47,16 +47,17 @@
     "static/media/WhatsApp Image 2022-10-23 at 2.18.16 AM.jpeg": "/we-can/static/media/WhatsApp Image 2022-10-23 at 2.18.16 AM.e5152f28043a2b1f9212.jpeg",
     "static/media/1st kitchen.jpeg": "/we-can/static/media/1st kitchen.b30cb60af4e5e8aef78f.jpeg",
     "static/media/Junge-Regular.ttf": "/we-can/static/media/Junge-Regular.001b325ee115e9171c2a.ttf",
+    "static/media/golden-tree.png": "/we-can/static/media/golden-tree.272d1c8ca42d36a200ce.png",
     "static/media/310366898_497503539053478__n (1).jpg": "/we-can/static/media/310366898_497503539053478_5108431652593121113_n (1).fe3206c20a87b2163b40.jpg",
     "static/media/dark-blue-tree.png": "/we-can/static/media/dark-blue-tree.567df0ecba67a292ea80.png",
     "static/media/aoox font.ttf": "/we-can/static/media/aoox font.bf642a7923c6b4030e03.ttf",
     "static/media/we-can-logo2-gold-and-white.png": "/we-can/static/media/we-can-logo2-gold-and-white.412beb7e0d79feee5b7b.png",
     "index.html": "/we-can/index.html",
-    "main.8fb08469.css.map": "/we-can/static/css/main.8fb08469.css.map",
+    "main.01de2a70.css.map": "/we-can/static/css/main.01de2a70.css.map",
     "main.41fa1e44.js.map": "/we-can/static/js/main.41fa1e44.js.map"
   },
   "entrypoints": [
-    "static/css/main.8fb08469.css",
+    "static/css/main.01de2a70.css",
     "static/js/main.41fa1e44.js"
   ]
 }
